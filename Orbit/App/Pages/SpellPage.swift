@@ -247,7 +247,11 @@ struct WrapLayout: Layout {
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         let rows = rows(width: proposal.width ?? .infinity, subviews)
         let height = rows.map { $0.map { $0.size.height }.max() ?? 0 }.reduce(0, +) + spacing * CGFloat(max(0, rows.count - 1))
-        let width = rows.map { r in r.map(\.size.width).reduce(0, +) + spacing * CGFloat(max(0, r.count - 1)) }.max() ?? 0
+        let widths = rows.map { row in
+            let itemsWidth = row.reduce(CGFloat.zero) { width, item in width + item.size.width }
+            return itemsWidth + spacing * CGFloat(max(0, row.count - 1))
+        }
+        let width = widths.max() ?? 0
         return CGSize(width: proposal.width ?? width, height: height)
     }
 

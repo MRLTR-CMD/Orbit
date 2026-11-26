@@ -240,8 +240,12 @@ enum SpellChecker {
     /// Daum and Naver at once. Where they agree the fix stands; where they differ, the first one's
     /// fix is applied and the other's is offered next to it. If one fails, the other's result is used.
     private static func combine(_ text: String, first: SpellEngine) async throws -> (text: String, hints: [SpellHint], both: Bool, used: SpellEngine, note: String?) {
-        async let d = Result { try await WebSpell.daum(text) }
-        async let n = Result { try await WebSpell.naver(text) }
+        @Sendable func capture(_ check: @MainActor @Sendable (String) async throws -> (String, [SpellHint])) async -> Result<(String, [SpellHint]), Error> {
+            do { return .success(try await check(text)) }
+            catch { return .failure(error) }
+        }
+        async let d = capture { try await WebSpell.daum($0) }
+        async let n = capture { try await WebSpell.naver($0) }
         let (daum, naver) = await (d, n)
         let second: SpellEngine = first == .naver ? .daum : .naver
         let (a, b): (Result<(String, [SpellHint]), Error>, Result<(String, [SpellHint]), Error>) = first == .naver ? (naver, daum) : (daum, naver)
@@ -683,7 +687,7 @@ enum Proofreader {
 
         let prompt = "Proofread the text between the markers.\n<<<\n\(body)\n>>>"
         let reply = try await session().respond(to: prompt, generating: ProofreadReply.self,
-                                                options: GenerationOptions(samplingMode: .greedy)).content
+                                                options: GenerationOptions(sampling: .greedy)).content
         let (fixed, hints) = validated(reply, source: body)
         return (lead + fixed + trail, hints)
     }
