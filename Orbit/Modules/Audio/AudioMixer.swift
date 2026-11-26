@@ -464,7 +464,7 @@ final class AudioMixer {
 /// ~/Library/Logs/Orbit/audio.log — which apps Orbit routed, where, and what failed.
 enum AudioLog {
     static func write(_ line: String) {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit", isDirectory: true)
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         let url = dir.appendingPathComponent("audio.log")
         guard let data = "\(ISO8601DateFormatter().string(from: Date())) \(line)\n".data(using: .utf8) else { return }

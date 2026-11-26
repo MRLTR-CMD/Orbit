@@ -60,6 +60,7 @@ final class FanControl {
     var hasFans: Bool { !SMC.shared.fans().isEmpty }
 
     func start() {
+        guard !AppEdition.isChineseTrial else { return }
         refresh()
         apply()
         upgrade = Task { await upgradeHelperIfNeeded() }
@@ -105,6 +106,7 @@ final class FanControl {
 
     /// The helper's registration can change in System Settings at any time.
     func refresh() {
+        guard !AppEdition.isChineseTrial else { return }
         let before = helper
         helper = switch service.status {
         case .enabled: .ready
@@ -115,6 +117,10 @@ final class FanControl {
     }
 
     func installHelper() {
+        guard !AppEdition.isChineseTrial else {
+            lastError = "Fan and battery control require a signed Orbit build.".loc
+            return
+        }
         lastError = nil
         do { try service.register() } catch { lastError = error.localizedDescription }
         refresh()
@@ -122,6 +128,7 @@ final class FanControl {
     }
 
     func removeHelper() {
+        guard !AppEdition.isChineseTrial else { return }
         mode = .auto
         Task {
             try? await Task.sleep(for: .milliseconds(400)) // let the fans go back to macOS first

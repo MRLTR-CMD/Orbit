@@ -14,7 +14,8 @@ enum QuickLookExtension {
 
     /// pluginkit marks an extension the user turned off with "-".
     static func isEnabled() async -> Bool? {
-        await Task.detached {
+        guard !AppEdition.isChineseTrial else { return nil }
+        return await Task.detached {
             let p = Process()
             p.executableURL = URL(fileURLWithPath: "/usr/bin/pluginkit")
             p.arguments = ["-m", "-i", identifier]

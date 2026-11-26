@@ -96,7 +96,7 @@ final class StorageModel {
     /// The disk breakdown is remembered across launches: the page opens with the last result, and
     /// Orbit quietly measures again in the background once per launch.
     private static var cacheURL: URL {
-        let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("Orbit", isDirectory: true)
+        let dir = AppEdition.applicationSupport
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("storage-usage.json")
     }

@@ -23,7 +23,7 @@ struct ArchivesPage: View {
                 .transition(.opacity.combined(with: .move(edge: .top)))
             }
 
-            SettingsGroup(title: "Open with Orbit") {
+            SettingsGroup(title: "Open with Orbit", footer: AppEdition.isChineseTrial ? "Finder integration is available in the signed Orbit build." : nil) {
                 SettingsRow(title: "Open archives with Orbit",
                             subtitle: archives.isDefaultHandler
                                 ? "Double-click an archive and Orbit unpacks it right next to it."
@@ -44,6 +44,8 @@ struct ArchivesPage: View {
                     }
                 }
             }
+
+            .disabled(AppEdition.isChineseTrial)
 
             SettingsGroup(title: "Compress", footer: compressFooter) {
                 SettingsRow(title: "Format", subtitle: formatHint, symbol: "archivebox") {
@@ -101,7 +103,7 @@ struct ArchivesPage: View {
                 }
             }
 
-            SettingsGroup(title: "Quick Look", footer: "Turn on “Orbit Preview” under Quick Look in System Settings › General › Login Items & Extensions.") {
+            SettingsGroup(title: "Quick Look", footer: AppEdition.isChineseTrial ? "Finder integration is available in the signed Orbit build." : "Turn on “Orbit Preview” under Quick Look in System Settings › General › Login Items & Extensions.") {
                 SettingsRow(title: "Preview archives and folders",
                             subtitle: previewEnabled == false
                                 ? "Off — press Space on a .zip or a folder to see what’s inside once it’s on."
@@ -110,7 +112,7 @@ struct ArchivesPage: View {
                     Button("Open Settings") { QuickLookExtension.openSettings() }
                         .buttonStyle(PillButtonStyle(prominent: false))
                 }
-            }
+            }.disabled(AppEdition.isChineseTrial)
         }
         .animation(.spring(duration: 0.3), value: archives.jobs.count)
         .onAppear {

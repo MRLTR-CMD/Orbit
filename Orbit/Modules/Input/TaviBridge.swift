@@ -56,6 +56,7 @@ final class TaviBridge {
     var standaloneAppInstalled: Bool { FileManager.default.fileExists(atPath: "/Applications/Tavi.app") }
 
     private init() {
+        guard !AppEdition.isChineseTrial else { return }
         // Adding Tavi in Keyboard Settings (or removing it) shows up here right away.
         DistributedNotificationCenter.default().addObserver(
             forName: Notification.Name(kTISNotifyEnabledKeyboardInputSourcesChanged as String), object: nil, queue: .main) { _ in
@@ -105,6 +106,7 @@ final class TaviBridge {
     // MARK: State
 
     func refresh() {
+        guard !AppEdition.isChineseTrial else { return }
         if case .working = status { return }
         installedVersion = Self.version(installed)
         isSelected = Self.currentSourceID == Self.inputMethodID
@@ -163,6 +165,7 @@ final class TaviBridge {
     /// macOS only honors those from the input method's process.
     /// - Parameter quietly: an automatic update — opens nothing and selects Tavi again only if it was selected.
     func install(quietly: Bool = false) async {
+        guard !AppEdition.isChineseTrial else { return }
         guard let bundled else { status = .failed("This build of Orbit doesn’t include Tavi.".loc); return }
         status = .working(quietly ? "Updating Tavi…".loc : "Installing Tavi…".loc)
         let wasSelected = Self.currentSourceID == Self.inputMethodID
@@ -199,6 +202,7 @@ final class TaviBridge {
     /// Switches to Tavi. Until it's in Keyboard Settings there's nothing to switch to, so that opens
     /// the settings instead.
     func select() {
+        guard !AppEdition.isChineseTrial else { return }
         guard isAdded || Self.addedInKeyboardSettings else { refresh(); openKeyboardSettings(); return }
         Task { await selectNow() }
     }
@@ -269,6 +273,7 @@ final class TaviBridge {
 
     /// From launch: a first look a minute in, then once a day.
     func startUpdates() {
+        guard !AppEdition.isChineseTrial else { return }
         refresh()
         scheduleUpdates()
     }
@@ -282,7 +287,9 @@ final class TaviBridge {
                 let t = TaviBridge.shared
                 Task { await t.checkForUpdate(userInitiated: false) }
                 let daily = Timer(timeInterval: 24 * 3600, repeats: true) { _ in
-                    MainActor.assumeIsolated { Task { await TaviBridge.shared.checkForUpdate(userInitiated: false) } }
+                    MainActor.assumeIsolated {
+                        _ = Task { await TaviBridge.shared.checkForUpdate(userInitiated: false) }
+                    }
                 }
                 daily.tolerance = 600
                 RunLoop.main.add(daily, forMode: .common)
@@ -297,6 +304,7 @@ final class TaviBridge {
     /// Looks for a newer Tavi, fetches and verifies it the way Tavi's own updater does (GitHub's
     /// SHA-256 digest, the maintainer's Ed25519 signature, the code signature), then installs it.
     func checkForUpdate(userInitiated: Bool) async {
+        guard !AppEdition.isChineseTrial else { return }
         guard installedVersion != nil || Self.version(installed) != nil else { return }
         if !userInitiated { guard autoUpdate else { return } }
         if case .working = status { return }

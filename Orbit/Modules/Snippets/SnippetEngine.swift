@@ -305,7 +305,7 @@ final class SnippetEngine {
     }
 
     private func log(_ line: String) {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit")
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         let url = dir.appendingPathComponent("snippets.log")
         let entry = "\(ISO8601DateFormatter().string(from: Date())) \(line)\n"

@@ -61,7 +61,7 @@ final class Updater {
     var currentVersion: String { Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0" }
 
     /// Running straight out of Xcode's build folder: checking works, replacing the app doesn't make sense.
-    var isDevBuild: Bool { Bundle.main.bundlePath.contains("/Build/Products/") }
+    var isDevBuild: Bool { AppEdition.isChineseTrial || Bundle.main.bundlePath.contains("/Build/Products/") }
 
     var busy: Bool {
         switch status {
@@ -71,7 +71,7 @@ final class Updater {
     }
 
     func start() {
-        guard !started else { return }
+        guard !started, !AppEdition.isChineseTrial else { return }
         started = true
         schedule()
     }
@@ -106,7 +106,7 @@ final class Updater {
     /// `userInitiated`: someone is looking at the Updates settings, so errors show there and no
     /// prompt pops up; otherwise a found update brings up the prompt (or installs, if allowed).
     func checkNow(userInitiated: Bool) {
-        guard !busy else { return }
+        guard !busy, !AppEdition.isChineseTrial else { return }
         status = .checking
         Task {
             do {
@@ -402,7 +402,7 @@ private final class DownloadDelegate: NSObject, URLSessionDownloadDelegate, @unc
 
 enum UpdateLog {
     static func write(_ line: String) {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit", isDirectory: true)
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         let url = dir.appendingPathComponent("updates.log")
         guard let data = "\(ISO8601DateFormatter().string(from: Date())) \(line)\n".data(using: .utf8) else { return }

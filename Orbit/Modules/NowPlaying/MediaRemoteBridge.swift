@@ -171,7 +171,7 @@ final class MediaRemoteBridge {
 
 enum NowPlayingLog {
     private static let url: URL = {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit")
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("nowplaying.log")
     }()

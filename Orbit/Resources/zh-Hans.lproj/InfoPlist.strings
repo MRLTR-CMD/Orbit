@@ -1,0 +1,7 @@
+"NSScreenCaptureUsageDescription" = "Orbit 需要访问屏幕以截图并识别屏幕上的文字。";
+"NSAppleEventsUsageDescription" = "Orbit 在你主动操作时使用 Apple 事件切换深色模式、清倒废纸篓，或运行你为手势指定的 AppleScript。";
+"NSCalendarsFullAccessUsageDescription" = "Orbit 在菜单栏日历中显示你的日程。日程数据保存在这台 Mac 上。";
+"NSAudioCaptureUsageDescription" = "Orbit 需要访问应用的声音以调节各应用的音量和均衡器。它不会录制这些声音。";
+"NSCameraUsageDescription" = "Orbit 使用这台 Mac 的摄像头进行人脸识别、解锁受保护的应用，并在你开启时显示刘海镜子。画面保存在本机。";
+"NSBluetoothAlwaysUsageDescription" = "Orbit 在 AirPods 或其他蓝牙设备连接时显示提醒和电量。";
+"NSMicrophoneUsageDescription" = "仅在你开启麦克风录制并正在录屏时，Orbit 才会录制麦克风声音。";

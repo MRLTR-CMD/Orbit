@@ -148,7 +148,7 @@ final class ClickHighlighter {
 /// ~/Library/Logs/Orbit/recording.log — what the recording did, for when something's missing from a video.
 enum RecordingLog {
     static func write(_ line: String) {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit", isDirectory: true)
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         let url = dir.appendingPathComponent("recording.log")
         guard let data = "\(ISO8601DateFormatter().string(from: Date())) \(line)\n".data(using: .utf8) else { return }

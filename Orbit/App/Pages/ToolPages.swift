@@ -169,7 +169,11 @@ struct InputPage: View {
         VStack(alignment: .leading, spacing: 28) {
             PageHeader(title: "Korean Input", subtitle: "Type without switching 한/영 — Tavi decides per word.")
 
-            TaviHero(tavi: tavi)
+            if AppEdition.isChineseTrial {
+                Text("Tavi is available in the signed Orbit build.").foregroundStyle(Palette.inkSecondary)
+            } else {
+                TaviHero(tavi: tavi)
+            }
 
             if tavi.installedVersion != nil {
                 SettingsGroup(title: "Typing") {

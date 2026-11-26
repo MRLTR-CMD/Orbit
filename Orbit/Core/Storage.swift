@@ -1,9 +1,22 @@
 import Foundation
 
+enum AppEdition {
+    static let isChineseTrial = Bundle.main.bundleIdentifier == "io.github.mrltr-cmd.orbit.zh"
+    static let dataDirectory = isChineseTrial ? "Orbit Chinese" : "Orbit"
+
+    static let applicationSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
+        .appendingPathComponent(dataDirectory, isDirectory: true)
+    static let logs = FileManager.default.homeDirectoryForCurrentUser
+        .appendingPathComponent("Library/Logs", isDirectory: true).appendingPathComponent(dataDirectory, isDirectory: true)
+
+    static func identifier(_ original: String) -> String {
+        isChineseTrial ? "io.github.mrltr-cmd.orbit.zh.\(original)" : original
+    }
+}
+
 enum Storage {
     static let root: URL = {
-        let url = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("Orbit", isDirectory: true)
+        let url = AppEdition.applicationSupport
         try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
         return url
     }()

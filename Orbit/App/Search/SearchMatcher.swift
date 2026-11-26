@@ -134,9 +134,9 @@ enum SearchMatcher {
             if let w = find(qn, in: tn, from: r.lowerBound + 1, wordStart: t.wordStart) {
                 return Hit(score: 800 + 60 * coverage, marks: marks(w, t.normSource))
             }
-            // Inside a word: natural for Korean compounds (클립"보드"), mostly noise for short Latin ("eq" in "requires").
-            let korean = qn.contains(where: isHangul)
-            let inside: Double = korean ? (qn.count >= 2 ? 640 : 300) : qn.count >= 4 ? 600 : qn.count == 3 ? 430 : 180
+            // Korean compounds and Chinese phrases can match without a word boundary.
+            let unspacedScript = qn.contains { isHangul($0) || (0x3400...0x9FFF).contains($0) }
+            let inside: Double = unspacedScript ? (qn.count >= 2 ? 640 : 300) : qn.count >= 4 ? 600 : qn.count == 3 ? 430 : 180
             return Hit(score: inside + 40 * coverage, marks: marks(r, t.normSource))
         }
         // Korean mid-composition, or typed without the last vowel: compare keystrokes.

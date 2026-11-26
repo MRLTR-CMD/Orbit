@@ -865,7 +865,7 @@ extension NSScreen {
 /// ~/Library/Logs/Orbit/notch.log: when and why the notch hid for full screen.
 enum NotchLog {
     private static let url: URL = {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit")
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("notch.log")
     }()

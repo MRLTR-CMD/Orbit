@@ -169,7 +169,7 @@ struct ContentsView: View {
                     .foregroundStyle(.secondary).frame(maxWidth: .infinity)
                 Spacer()
             }
-            Text("Orbit Preview").font(.system(size: 10, weight: .medium)).foregroundStyle(.tertiary)
+            Text(t("Orbit Preview", "Orbit Preview")).font(.system(size: 10, weight: .medium)).foregroundStyle(.tertiary)
                 .frame(maxWidth: .infinity, alignment: .trailing).padding(.horizontal, 14).padding(.vertical, 6)
         }
         .background(Color(white: 0.09))
@@ -185,10 +185,10 @@ struct ContentsView: View {
     private var summary: String {
         let f = ByteCountFormatter()
         var parts = [tree.kind == "Folder" ? t("Folder", "폴더") : tree.kind,
-                     t("\(tree.root.fileCount.formatted()) items", "항목 \(tree.root.fileCount.formatted())개"),
+                     t("%@ items", "항목 %@개", tree.root.fileCount.formatted()),
                      f.string(fromByteCount: tree.root.size)]
         if let onDisk = tree.onDisk, tree.root.size > 0 {
-            parts.append(t("\(f.string(fromByteCount: onDisk)) compressed", "압축 \(f.string(fromByteCount: onDisk))"))
+            parts.append(t("%@ compressed", "압축 %@", f.string(fromByteCount: onDisk)))
         }
         if tree.truncated { parts.append(t("showing the first part", "앞부분만 보여요")) }
         return parts.joined(separator: " · ")
@@ -219,7 +219,9 @@ private struct Row: View {
     }
 }
 
-/// The extension has no string catalog of its own; Korean is the only other language Orbit speaks.
-private func t(_ en: String, _ ko: String) -> String {
-    (Locale.preferredLanguages.first ?? "").hasPrefix("ko") ? ko : en
+/// Quick Look runs in its own process and follows the system language.
+private func t(_ en: String, _ ko: String, _ args: CVarArg...) -> String {
+    let isKorean = Locale.preferredLanguages.first?.hasPrefix("ko") == true
+    let format = isKorean ? ko : Bundle.main.localizedString(forKey: en, value: en, table: nil)
+    return args.isEmpty ? format : String(format: format, locale: .current, arguments: args)
 }

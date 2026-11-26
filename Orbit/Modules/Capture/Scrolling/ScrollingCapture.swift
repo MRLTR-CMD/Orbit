@@ -609,7 +609,7 @@ private func scrollCaptureCallback(proxy: CGEventTapProxy, type: CGEventType, ev
 final class ScrollCaptureLog: @unchecked Sendable {
     static let shared = ScrollCaptureLog()
     private let queue = DispatchQueue(label: "com.lyu.orbit.scrolling-log", qos: .utility)
-    private let url = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit/scrolling.log")
+    private let url = AppEdition.logs.appendingPathComponent("scrolling.log")
     private var handle: FileHandle?
     private var start = Date()
 

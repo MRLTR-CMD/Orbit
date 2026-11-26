@@ -39,7 +39,7 @@ enum VaultKeychain {
 
 /// The Secret Key lives on this Mac (and on the Emergency Kit), never in the vault file.
 enum SecretKeyStore {
-    private static let service = "com.lyu.orbit.passwords.secret-key"
+    private static let service = AppEdition.identifier("com.lyu.orbit.passwords.secret-key")
 
     static func save(_ key: [UInt8], account: String) -> Bool {
         VaultKeychain.save(Data(key), service: service, account: account)
@@ -59,7 +59,7 @@ enum SecretKeyStore {
 /// fingerprint check, and that key never leaves the chip. Adding or removing a fingerprint
 /// invalidates it, and the Master Password is needed again.
 enum BiometricUnlock {
-    private static let service = "com.lyu.orbit.passwords.biometric"
+    private static let service = AppEdition.identifier("com.lyu.orbit.passwords.biometric")
 
     private struct Stored: Codable {
         var enclaveKey: Data
@@ -128,7 +128,7 @@ enum BiometricUnlock {
 /// Orbit, not by the Secure Enclave — so it's opt-in and says so. The vault key it releases is kept in
 /// the Keychain item only Orbit can read, sealed with a key that's also there.
 enum FaceVaultKey {
-    private static let service = "com.lyu.orbit.passwords.face"
+    private static let service = AppEdition.identifier("com.lyu.orbit.passwords.face")
 
     static func isEnabled(account: String) -> Bool { VaultKeychain.read(service: service, account: account) != nil }
 

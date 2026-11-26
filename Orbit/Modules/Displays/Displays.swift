@@ -564,7 +564,7 @@ enum AudioOutput {
 /// ~/Library/Logs/Orbit/displays.log
 enum DisplaysLog {
     nonisolated static func write(_ line: String) {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit", isDirectory: true)
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         let url = dir.appendingPathComponent("displays.log")
         let text = "\(ISO8601DateFormatter().string(from: Date())) \(line)\n"

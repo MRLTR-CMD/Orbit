@@ -7,15 +7,14 @@ import Darwin
 enum OrbitInstance {
     private static var descriptor: Int32 = -1
     private static var observer: NSObjectProtocol?
-    private static let reopen = Notification.Name("com.lyu.orbit.reopen")
-    private static let reopened = Notification.Name("com.lyu.orbit.reopened")
+    private static let reopen = Notification.Name(AppEdition.identifier("com.lyu.orbit.reopen"))
+    private static let reopened = Notification.Name(AppEdition.identifier("com.lyu.orbit.reopened"))
     private static var handled: [String] = []
     static var ready = false
 
     private static func acquire() throws -> Int32? {
         let fm = FileManager.default
-        let directory = try fm.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-            .appendingPathComponent("Orbit", isDirectory: true)
+        let directory = AppEdition.applicationSupport
         try fm.createDirectory(at: directory, withIntermediateDirectories: true, attributes: [.posixPermissions: 0o700])
         let dir = open(directory.path, O_RDONLY | O_DIRECTORY | O_NOFOLLOW | O_CLOEXEC)
         guard dir >= 0 else { throw NSError(domain: NSPOSIXErrorDomain, code: Int(errno)) }

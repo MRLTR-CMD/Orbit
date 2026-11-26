@@ -115,7 +115,7 @@ final class VideoEditorModel {
         if format == .mp4, let exported, FileManager.default.fileExists(atPath: exported.path) { return exported }
         let suffix = edited ? " (Edited)" : ""
         let name = url.deletingPathExtension().lastPathComponent + suffix
-        let out = FileManager.default.temporaryDirectory.appendingPathComponent("Orbit", isDirectory: true)
+        let out = FileManager.default.temporaryDirectory.appendingPathComponent(AppEdition.dataDirectory, isDirectory: true)
         try? FileManager.default.createDirectory(at: out, withIntermediateDirectories: true)
         working = format == .gif ? "Making a GIF…".loc : "Exporting…".loc
         defer { working = nil }

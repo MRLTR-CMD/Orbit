@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Check generated search metadata for ambiguous notch labels."""
+"""Check settings search metadata and the ranking of real localized pages."""
+import json
+import plistlib
 import runpy
 import subprocess
 import tempfile
@@ -53,13 +55,37 @@ if !(gap?.keywords.contains("스냅") ?? false) {
     print("FAIL: window gap keeps direct window synonyms")
     failures += 1
 }
+for (query, page) in [("窗口管理", "windows"), ("剪贴板", "clipboard"), ("菜单栏", "menubar"), ("贴板", "clipboard")] {
+    if !SettingsSearch.search(query, limit: 5).contains(where: { $0.entry?.kind == .page && $0.entry?.page == page }) {
+        print("FAIL: \(query) did not find \(page)")
+        failures += 1
+    }
+}
+if SettingsSearch.marks("贴板", in: "剪贴板") != Set([1, 2]) {
+    print("FAIL: Chinese search highlights matched characters")
+    failures += 1
+}
 exit(failures == 0 ? 0 : 1)
 ''')
-    binary = scratch / 'settings-search-tests'
+    contents = scratch / 'SettingsSearchTests.app/Contents'
+    binary = contents / 'MacOS' / 'settings-search-tests'
+    binary.parent.mkdir(parents=True)
+    with (contents / 'Info.plist').open('wb') as info:
+        plistlib.dump(dict(CFBundleIdentifier='org.orbit.settings-search-tests',
+                           CFBundleExecutable=binary.name, CFBundlePackageType='APPL',
+                           CFBundleDevelopmentRegion='en'), info)
+    strings = contents / 'Resources/zh-Hans.lproj/Localizable.strings'
+    strings.parent.mkdir(parents=True)
+    with (root / 'Orbit/Resources/Localizable.xcstrings').open(encoding='utf-8') as catalog:
+        chinese = {key: entry['localizations']['zh-Hans']['stringUnit']['value']
+                   for key, entry in json.load(catalog)['strings'].items()
+                   if 'zh-Hans' in entry.get('localizations', {})}
+    with strings.open('wb') as translations:
+        plistlib.dump(chinese, translations)
     subprocess.run(['xcrun', 'swiftc', '-swift-version', '5',
                     str(root / 'Orbit/App/Search/SearchMatcher.swift'),
                     str(root / 'Orbit/App/Search/SettingsSearch.swift'),
                     str(root / 'Orbit/App/Generated/SettingsIndex.swift'),
                     str(main), '-o', str(binary)], check=True)
     subprocess.run([str(binary)], check=True)
-print('PASS: notch Home discovery, Windows search ranking and direct row synonyms')
+print('PASS: settings search in Simplified Chinese and Korean')

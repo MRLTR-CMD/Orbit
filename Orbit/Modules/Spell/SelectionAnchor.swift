@@ -184,8 +184,7 @@ enum SelectionReplacer {
 
 /// Which way 바꾸기 went, for diagnosis. Never the text itself.
 enum SpellLog {
-    static let url: URL = FileManager.default.homeDirectoryForCurrentUser
-        .appendingPathComponent("Library/Logs/Orbit/spell.log")
+    static let url: URL = AppEdition.logs.appendingPathComponent("spell.log")
 
     static func write(_ line: String) {
         let stamp = ISO8601DateFormatter().string(from: Date())

@@ -3,7 +3,7 @@ import Security
 
 /// API keys live in the login keychain, not in preferences.
 enum Keychain {
-    private static let service = "com.lyu.orbit"
+    private static let service = AppEdition.identifier("com.lyu.orbit")
 
     static func get(_ account: String) -> String? {
         let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword, kSecAttrService as String: service,

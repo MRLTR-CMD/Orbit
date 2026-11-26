@@ -6,12 +6,11 @@ import Vision
 /// The enrolled face: Vision feature prints of aligned face crops — never the photos themselves.
 /// Sealed with AES-GCM under a key that lives only in this Mac's Keychain (this device, unlocked).
 enum FaceStore {
-    private static let service = "com.lyu.orbit.facelock"
+    private static let service = AppEdition.identifier("com.lyu.orbit.facelock")
     private static let account = "faces-key"
 
     static var directory: URL {
-        let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-        return base.appendingPathComponent("Orbit/FaceLock", isDirectory: true)
+        Storage.root.appendingPathComponent("FaceLock", isDirectory: true)
     }
 
     private static var file: URL { directory.appendingPathComponent("faces.bin") }

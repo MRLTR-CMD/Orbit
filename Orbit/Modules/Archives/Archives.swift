@@ -66,6 +66,7 @@ final class Archives {
     }
 
     func start() {
+        guard !AppEdition.isChineseTrial else { return }
         NSApp.servicesProvider = ArchiveServices.shared
         refreshServices()
         if Bundle.main.bundleIdentifier == "dev.3xhaust.Orbit", !Updater.shared.isDevBuild,
@@ -248,7 +249,7 @@ final class Archives {
     }
 
     func setDefaultHandler(_ on: Bool) {
-        guard !changingHandler else { return }
+        guard !changingHandler, !AppEdition.isChineseTrial else { return }
         changingHandler = true
         isDefaultHandler = on // the switch moves at once; reality is read back below
         Task {
@@ -315,7 +316,7 @@ final class Archives {
     }
 
     static func log(_ line: String) {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit")
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         let url = dir.appendingPathComponent("archives.log")
         let text = "\(ISO8601DateFormatter().string(from: Date())) \(line)\n"

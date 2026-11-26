@@ -86,8 +86,7 @@ final class Vault {
     // MARK: Life cycle
 
     init(directory: URL? = nil) {
-        let dir = directory ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("Orbit/Passwords", isDirectory: true)
+        let dir = directory ?? Storage.root.appendingPathComponent("Passwords", isDirectory: true)
         url = dir.appendingPathComponent("Vault.orbitvault")
         reload()
     }

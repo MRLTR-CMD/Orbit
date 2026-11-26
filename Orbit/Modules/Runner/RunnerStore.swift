@@ -19,8 +19,7 @@ enum RunnerStore {
     private static let pixelHeight = 72
 
     static var root: URL {
-        let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-        return base.appendingPathComponent("Orbit/Runners", isDirectory: true)
+        Storage.root.appendingPathComponent("Runners", isDirectory: true)
     }
 
     private static func folder(_ id: UUID) -> URL { root.appendingPathComponent(id.uuidString, isDirectory: true) }

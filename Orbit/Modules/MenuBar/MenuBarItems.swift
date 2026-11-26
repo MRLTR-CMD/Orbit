@@ -1227,7 +1227,7 @@ private extension MenuBarItems.Section {
 /// can be looked at afterwards.
 enum MenuBarLog {
     private static let url: URL = {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit", isDirectory: true)
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("menubar.log")
     }()

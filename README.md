@@ -13,7 +13,7 @@
 
 [**Download**](https://github.com/3x-haust/Orbit/releases) · [Features](#features) · [Build from source](#build-from-source)
 
-**English** · [한국어](README.ko.md)
+**English** · [한국어](README.ko.md) · [简体中文](README.zh-CN.md)
 
 <br/>
 

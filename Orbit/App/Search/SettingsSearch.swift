@@ -23,6 +23,19 @@ enum SettingsSearch {
         static func == (a: Result, b: Result) -> Bool { a.id == b.id }
     }
 
+    private static let chineseBundle = Bundle.main.url(forResource: "zh-Hans", withExtension: "lproj")
+        .flatMap { Bundle(url: $0) }
+
+    private static func document(_ fields: [(String, Double, Bool)]) -> SearchDocument {
+        guard let chineseBundle else { return SearchDocument(fields) }
+        let translations: [(String, Double, Bool)] = fields.compactMap { key, weight, fuzzy in
+            guard !key.isEmpty else { return nil }
+            let translation = chineseBundle.localizedString(forKey: key, value: key, table: nil)
+            return translation == key ? nil : (translation, weight, fuzzy)
+        }
+        return SearchDocument(fields + translations)
+    }
+
     /// Weights: what a thing is called beats how it's described, which beats where it lives.
     private static let documents: [SearchDocument] = SettingsIndex.entries.map { e in
         let pageEntry = SettingsIndex.entries.first { $0.kind == .page && $0.page == e.page }
@@ -38,11 +51,11 @@ enum SettingsSearch {
         if e.kind != .page, let p = pageEntry {
             fields += [(p.title, 0.4, false), (p.titleKo, 0.4, false)]
         }
-        return SearchDocument(fields)
+        return document(fields)
     }
 
     private static let actionDocuments: [SearchDocument] = SettingsIndex.actions.map { a in
-        SearchDocument(a.titles.map { ($0, 0.97, true) } + a.titlesKo.map { ($0, 0.97, true) } + a.keywords.map { ($0, 0.85, false) } + a.related.map { ($0, 0.5, false) })
+        document(a.titles.map { ($0, 0.97, true) } + a.titlesKo.map { ($0, 0.97, true) } + a.keywords.map { ($0, 0.85, false) } + a.related.map { ($0, 0.5, false) })
     }
 
     static func search(_ text: String, limit: Int = 60) -> [Result] {

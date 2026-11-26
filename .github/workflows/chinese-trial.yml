@@ -1,0 +1,32 @@
+name: Chinese trial for Intel Mac
+
+on:
+  push:
+    branches: [codex/zh-hans]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chinese-trial-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-26-intel
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check settings search and bundle metadata
+        run: |
+          python3 tools/regressions/settings-index-tests.py
+          python3 tools/regressions/check-metadata.py
+      - name: Build and package the Chinese trial
+        run: bash tools/build-chinese-trial.sh
+      - uses: actions/upload-artifact@v6
+        with:
+          name: Orbit-Chinese-Intel
+          path: dist/Orbit-Chinese-Intel.zip
+          if-no-files-found: error
+          retention-days: 14

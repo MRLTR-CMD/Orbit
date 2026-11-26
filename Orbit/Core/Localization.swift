@@ -14,11 +14,13 @@ import AppKit
 /// Per-app language override (System Settings › General › Language & Region › Applications does the same).
 @MainActor
 enum AppLanguage {
-    /// "system", "en" or "ko" — what Orbit was launched with.
+    /// The explicit per-app override, or "system" when following macOS.
     static let current: String = {
         guard let list = UserDefaults.standard.persistentDomain(forName: Bundle.main.bundleIdentifier ?? "")?["AppleLanguages"] as? [String],
               let first = list.first else { return "system" }
-        return first.hasPrefix("ko") ? "ko" : "en"
+        let language = Locale.Language(identifier: first).maximalIdentifier
+        if language.hasPrefix("zh-Hans") { return "zh-Hans" }
+        return language.hasPrefix("ko-") ? "ko" : "en"
     }()
 
     static func set(_ code: String) {

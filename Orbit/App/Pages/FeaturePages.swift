@@ -564,7 +564,9 @@ struct GeneralPage: View {
 
             SettingsGroup(title: "Language", footer: language == AppLanguage.current ? nil : "Relaunch Orbit to switch languages.") {
                 SettingsRow(title: "App language", symbol: "globe") {
-                    ChipPicker(selection: $language, options: [("system", "System"), ("en", "English"), ("ko", "한국어")])
+                    ChipPicker(selection: $language, options: [
+                        ("system", "System"), ("en", "English"), ("ko", "한국어"), ("zh-Hans", "简体中文")
+                    ])
                         .onChange(of: language) { AppLanguage.set(language) }
                     if language != AppLanguage.current {
                         Button("Relaunch") { AppLanguage.relaunch() }.buttonStyle(PillButtonStyle())
@@ -642,6 +644,19 @@ private struct UpdatesGroup: View {
     @Bindable private var notesSheet = ReleaseNotesSheet.shared
 
     var body: some View {
+        if AppEdition.isChineseTrial {
+            SettingsGroup(title: "Updates") {
+                SettingsRow(title: "Version %@".loc(updater.currentVersion), subtitle: "Trial updates are available on GitHub.", symbol: "arrow.down.circle") {
+                    Link("Open GitHub", destination: URL(string: "https://github.com/MRLTR-CMD/Orbit/actions")!)
+                        .buttonStyle(PillButtonStyle())
+                }
+            }
+        } else {
+            standardUpdates
+        }
+    }
+
+    private var standardUpdates: some View {
         SettingsGroup(title: "Updates", footer: updater.isDevBuild ? "Development build — installing is off" : nil) {
             SettingsRow(title: "Version %@".loc(updater.currentVersion), subtitle: summary, symbol: "arrow.down.circle") {
                 if case .available(let release) = updater.status, updater.isDevBuild {

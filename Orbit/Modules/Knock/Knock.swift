@@ -225,7 +225,7 @@ private final class Engine: @unchecked Sendable {
 /// ~/Library/Logs/Orbit/knock.log: what was heard and what ran.
 enum KnockLog {
     private static let url: URL = {
-        let dir = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit")
+        let dir = AppEdition.logs
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("knock.log")
     }()

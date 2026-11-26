@@ -263,7 +263,7 @@ final class MacUnlock {
 
 /// The login password, in this Mac's Keychain only: never synced, never in a backup another Mac can open.
 private enum PasswordVault {
-    private static let service = "com.lyu.orbit.macunlock"
+    private static let service = AppEdition.identifier("com.lyu.orbit.macunlock")
 
     private static var query: [String: Any] {
         [kSecClass as String: kSecClassGenericPassword,

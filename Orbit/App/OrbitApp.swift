@@ -72,6 +72,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillFinishLaunching(_ notification: Notification) {
+        if AppEdition.isChineseTrial,
+           ["dev.3xhaust.Orbit", "com.lyu.orbit"].contains(where: {
+               !NSRunningApplication.runningApplications(withBundleIdentifier: $0).isEmpty
+           }) {
+            let alert = NSAlert()
+            alert.messageText = "Quit the original Orbit before opening this trial.".loc
+            alert.runModal()
+            exit(EXIT_SUCCESS)
+        }
         do { duplicateInstance = try !OrbitInstance.claim() }
         catch { startupFailed(error) }
         guard !duplicateInstance else { return }
@@ -242,7 +251,7 @@ private struct MenuContent: View {
             }
         }
         Divider()
-        Menu(KeepAwake.shared.isOn ? "Awake · " + KeepAwake.describe(KeepAwake.shared.session ?? .indefinite) : "Keep Mac Awake") {
+        Menu(KeepAwake.shared.isOn ? "Awake · %@".loc(KeepAwake.describe(KeepAwake.shared.session ?? .indefinite)) : "Keep Mac Awake".loc) {
             if KeepAwake.shared.isOn {
                 Button("Turn Off") { KeepAwake.shared.stop() }
                 Divider()
@@ -363,7 +372,7 @@ enum DebugHook {
             w.setFrame(original, display: true)
             let ms = (CACurrentMediaTime() - started) * 1000 / 20
             let line = "\(Date()) bench-layout movable=\(w.isMovableByWindowBackground): \(String(format: "%.1f", ms))ms per layout\n"
-            let url = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit/perf.log")
+            let url = AppEdition.logs.appendingPathComponent("perf.log")
             if let h = try? FileHandle(forWritingTo: url) { h.seekToEndOfFile(); h.write(Data(line.utf8)); try? h.close() }
             else { try? Data(line.utf8).write(to: url) }
         case let c where c.hasPrefix("promo:"):
@@ -378,7 +387,7 @@ enum DebugHook {
                 DispatchQueue.main.async {
                     let ms = (CACurrentMediaTime() - started) * 1000
                     let line = "\(Date()) \(inner): \(String(format: "%.1f", ms))ms\n"
-                    let url = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit/perf.log")
+                    let url = AppEdition.logs.appendingPathComponent("perf.log")
                     if let h = try? FileHandle(forWritingTo: url) { h.seekToEndOfFile(); h.write(Data(line.utf8)); try? h.close() }
                     else { try? Data(line.utf8).write(to: url) }
                 }
@@ -388,7 +397,7 @@ enum DebugHook {
     }
 
     @MainActor static func perfLog(_ line: String) {
-        let url = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs/Orbit/perf.log")
+        let url = AppEdition.logs.appendingPathComponent("perf.log")
         try? FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
         let line = "\(Date()) \(line)\n"
         if let h = try? FileHandle(forWritingTo: url) { h.seekToEndOfFile(); h.write(Data(line.utf8)); try? h.close() }
