@@ -12,7 +12,7 @@ if [[ -z "$built_app" ]]; then
     python3 tools/i18n.py
     xcodebuild -project Orbit.xcodeproj -scheme Orbit -configuration Debug \
         -destination 'generic/platform=macOS' -derivedDataPath "$work/build" \
-        ONLY_ACTIVE_ARCH=NO ARCHS=x86_64 CODE_SIGNING_ALLOWED=NO build
+        ONLY_ACTIVE_ARCH=NO ARCHS=x86_64 ENABLE_DEBUG_DYLIB=NO CODE_SIGNING_ALLOWED=NO build
     built_app="$work/build/Build/Products/Debug/Orbit.app"
 fi
 
