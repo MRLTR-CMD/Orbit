@@ -12,6 +12,7 @@ struct HomePage: View {
     ]
 
     var body: some View {
+        let awakeStatus = KeepAwake.shared.isOn ? "On".loc : "Off".loc
         VStack(alignment: .leading, spacing: 32) {
             PageHeader(title: greeting, subtitle: "Orbit is running in your menu bar.")
 
@@ -58,7 +59,7 @@ struct HomePage: View {
             HStack(spacing: 12) {
                 StatCard(value: "\(ClipboardStore.shared.items.count)", label: "Clipboard items", symbol: "doc.on.clipboard") { go(.clipboard) }
                 StatCard(value: "\(capture.recent.count)", label: "Captures", symbol: "viewfinder") { go(.capture) }
-                StatCard(value: KeepAwake.shared.isOn ? "On" : "Off", label: "Awake", symbol: "cup.and.saucer") { go(.awake) }
+                StatCard(value: awakeStatus, label: "Awake", symbol: "cup.and.saucer") { go(.awake) }
             }
         }
         .animation(.spring(duration: 0.4), value: permissions.screenCapture && permissions.accessibility)

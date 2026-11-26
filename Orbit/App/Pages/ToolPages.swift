@@ -554,7 +554,7 @@ struct MenuBarPage: View {
                                     .padding(.horizontal, 10).frame(width: 190, height: 28)
                                     .background(Capsule().fill(Palette.raised))
                                 Menu {
-                                    ForEach(["M월 d일 (E)", "M/d E", "E a h:mm", "HH:mm", "yyyy.MM.dd", "MMM d, E HH:mm"], id: \.self) { p in
+                                    ForEach(["M월 d일 (E)".loc, "M/d E", "E a h:mm", "HH:mm", "yyyy.MM.dd", "MMM d, E HH:mm"], id: \.self) { p in
                                         Button("\(p)   →   \(MenuBarCalendar.text(for: Date(), style: .custom, custom: p) ?? "")") { format = p }
                                     }
                                 } label: {

@@ -140,7 +140,7 @@ struct IconButton: View {
         .buttonStyle(.plain)
         .focusEffectDisabled() // the active tool is already marked; a blue ring on top reads as a second selection
         .help(help.loc)
-        .accessibilityLabel(help)
+        .accessibilityLabel(help.loc)
         .onHover { h in withAnimation(Motion.hover) { hovering = h } }
     }
 }

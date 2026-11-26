@@ -108,7 +108,7 @@ final class EditorWindow: NSWindow, NSWindowDelegate {
                    styleMask: [.titled, .closable, .resizable, .miniaturizable, .fullSizeContentView], backing: .buffered, defer: false)
         titlebarAppearsTransparent = true
         titleVisibility = .hidden
-        title = "Annotate"
+        title = "Annotate".loc
         isReleasedWhenClosed = false
         minSize = NSSize(width: 760, height: 420)
         delegate = self

@@ -232,7 +232,7 @@ final class TaviBridge {
     private enum RunFailure: Error, LocalizedError {
         case exited(Int32, String)
         var errorDescription: String? {
-            if case .exited(let code, let output) = self { return "Tavi exited with \(code). \(output)" }
+            if case .exited(let code, let output) = self { return "Tavi exited with %d. %@".loc(code, output) }
             return nil
         }
     }

@@ -387,7 +387,7 @@ private struct AppsSection: View {
                 }
             }
             if query.isEmpty && list.count > 12 {
-                Button(showAll ? "Show fewer" : "Show all %ld apps".loc(list.count)) {
+                Button(showAll ? "Show fewer".loc : "Show all %ld apps".loc(list.count)) {
                     withAnimation(.spring(duration: 0.4, bounce: 0.1)) { showAll.toggle() }
                 }
                 .buttonStyle(PillButtonStyle(prominent: false))

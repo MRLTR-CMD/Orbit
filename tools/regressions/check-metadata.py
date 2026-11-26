@@ -28,6 +28,35 @@ for key, value in translations.items():
     assert re.findall(r'%ld|%@', key) == re.findall(r'%ld|%@', value), key
 print(f'PASS {len(translations)} regression translations and format arguments')
 
+format_token = re.compile(
+    r'%%|%(?:([1-9][0-9]*)\$)?([-+#0]*[0-9]*(?:\.[0-9]+)?'
+    r'(?:ll|hh|l|h|z|t|j)?[@diuoxXfFeEgGaAcCsSpDn])'
+)
+
+
+def format_arguments(text):
+    arguments = []
+    implicit_position = 0
+    literal_percents = 0
+    for match in format_token.finditer(text):
+        if match[0] == '%%':
+            literal_percents += 1
+        elif match[1]:
+            arguments.append((int(match[1]), match[2]))
+        else:
+            implicit_position += 1
+            arguments.append((implicit_position, match[2]))
+    return sorted(arguments), literal_percents
+
+
+chinese = {}
+for path in sorted((ROOT / 'tools/i18n').glob('zh-Hans*.json')):
+    chinese.update(json.loads(path.read_text()))
+for key, value in chinese.items():
+    assert catalog[key]['localizations']['zh-Hans']['stringUnit']['value'] == value, key
+    assert format_arguments(key) == format_arguments(value), key
+print(f'PASS {len(chinese)} Chinese catalog entries and format arguments')
+
 yaml = read('project.yml')
 project = read('Orbit.xcodeproj/project.pbxproj')
 version = re.search(r'MARKETING_VERSION: "([^"]+)"', yaml)[1]

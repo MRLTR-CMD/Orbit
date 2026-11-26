@@ -35,7 +35,7 @@ struct SystemDataSection: View {
                             .padding(.leading, 4)
                             list(showAll.contains(section) ? items : Array(items.prefix(shown)))
                             if items.count > shown {
-                                Button(showAll.contains(section) ? "Show fewer" : "Show all %ld".loc(items.count)) {
+                                Button(showAll.contains(section) ? "Show fewer".loc : "Show all %ld".loc(items.count)) {
                                     withAnimation(.spring(duration: 0.4, bounce: 0.1)) {
                                         if showAll.contains(section) { showAll.remove(section) } else { showAll.insert(section) }
                                     }

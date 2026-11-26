@@ -922,7 +922,8 @@ private struct BehaviorCard: View {
                 SettingsRow(title: "Rest time", symbol: "timer") {
                     DwellPreview(seconds: dwell)
                     Slider(value: $dwell, in: 0.25...1.0, step: 0.05).frame(width: 150)
-                    Text("\(dwell, specifier: "%.2f")s").font(.orbitCaption.monospacedDigit()).foregroundStyle(Palette.inkSecondary).frame(width: 40)
+                    Text("%.2fs".loc(dwell)).font(.orbitCaption.monospacedDigit())
+                        .foregroundStyle(Palette.inkSecondary).fixedSize().frame(minWidth: 40)
                 }
                 .transition(.opacity.combined(with: .move(edge: .top)))
             }

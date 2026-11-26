@@ -83,7 +83,7 @@ final class NowPlayingWidgetController {
         p.isReleasedWhenClosed = false
         p.acceptsMouseMovedEvents = true
         p.animationBehavior = .none
-        p.title = "Orbit Now Playing"
+        p.title = "Orbit Now Playing".loc
         // Takes the first click without needing focus; hover is tracked here too, since a window that
         // never becomes key in a background app doesn't always get SwiftUI's hover.
         let host = FirstMouseHostingView(rootView: WidgetHost(state: state, controller: self).orbitTint())

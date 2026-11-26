@@ -243,7 +243,11 @@ struct NotchAIWindowView: View {
 
     private var resetCountdown: String? {
         guard let countdown = NotchAIResetCountdown(resetAt: window.resetAt, now: now) else { return nil }
-        return "\(countdown.value)\(countdown.unit.rawValue)"
+        switch countdown.unit {
+        case .days: return "%ldd".loc(countdown.value)
+        case .hours: return "%ldh".loc(countdown.value)
+        case .minutes: return "%ldm".loc(countdown.value)
+        }
     }
 
     var body: some View {

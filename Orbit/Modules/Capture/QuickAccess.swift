@@ -494,7 +494,7 @@ private struct GlassIcon: View {
         .buttonStyle(.plain)
         .orbitGlass(interactive: true, in: Circle())
         .help(help.loc)
-        .accessibilityLabel(help)
+        .accessibilityLabel(help.loc)
     }
 }
 

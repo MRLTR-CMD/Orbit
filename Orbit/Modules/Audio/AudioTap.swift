@@ -182,7 +182,7 @@ final class AppTap {
     enum Failure: LocalizedError {
         case step(String, OSStatus)
         var errorDescription: String? {
-            if case .step(let what, let status) = self { return "\(what) failed (\(status))" }
+            if case .step(let what, let status) = self { return "%@ failed (%d)".loc(what.loc, status) }
             return nil
         }
     }

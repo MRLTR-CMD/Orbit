@@ -500,7 +500,7 @@ private struct ToolIcon: View {
         .buttonStyle(.plain)
         .onHover { h in withAnimation(Motion.hover) { hovering = h } }
         .hoverHint(hint)
-        .accessibilityLabel(hint)
+        .accessibilityLabel(hint.loc)
     }
 }
 

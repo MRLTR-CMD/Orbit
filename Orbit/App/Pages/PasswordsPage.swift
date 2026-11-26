@@ -821,7 +821,7 @@ private struct WatchtowerView: View {
                         .font(.system(size: 26, weight: .semibold))
                         .foregroundStyle(total == 0 ? Palette.ink : Palette.accent)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(total == 0 ? "Everything looks good" : "%ld items need attention".loc(total)).font(.orbitTitle)
+                        Text(total == 0 ? "Everything looks good".loc : "%ld items need attention".loc(total)).font(.orbitTitle)
                         Text("Checked %ld logins on this Mac.".loc(logins)).font(.orbitCaption).foregroundStyle(Palette.inkSecondary)
                     }
                     Spacer()

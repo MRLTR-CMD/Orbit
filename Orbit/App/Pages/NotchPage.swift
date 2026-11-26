@@ -458,7 +458,7 @@ private struct NotchDemoShape: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
                     VStack(alignment: .leading, spacing: 5) {
-                        Text(verbatim: "Night Drive").font(.system(size: 12, weight: .semibold)).lineLimit(1)
+                        Text("Night Drive").font(.system(size: 12, weight: .semibold)).lineLimit(1)
                         Text(verbatim: "Orbit").font(.system(size: 10)).foregroundStyle(.white.opacity(0.6))
                         Capsule().fill(.white.opacity(0.16)).frame(height: 3)
                             .overlay(alignment: .leading) { Capsule().fill(.white).frame(width: 25, height: 3) }

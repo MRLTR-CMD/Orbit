@@ -162,7 +162,7 @@ struct ClipCard: View {
         .shadow(color: .black.opacity(selected ? 0.18 : 0.08), radius: selected ? 10 : 4, y: 2)
         .onHover { h in withAnimation(Motion.hover) { hovering = h } }
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(item.kind.title): \(item.title)")
+        .accessibilityLabel("%@: %@".loc(item.kind.title.loc, item.title))
         .accessibilityAddTraits(selected ? .isSelected : [])
     }
 

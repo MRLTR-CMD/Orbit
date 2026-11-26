@@ -66,7 +66,7 @@ struct ClipItem: Codable, Identifiable, Hashable {
         switch kind {
         case .text, .link, .color: previewText.trimmingCharacters(in: .whitespacesAndNewlines)
         case .image: "Image %ld × %ld".loc(Int(imageSize?.width ?? 0), Int(imageSize?.height ?? 0))
-        case .file: filePaths?.map { ($0 as NSString).lastPathComponent }.joined(separator: ", ") ?? "Files"
+        case .file: filePaths?.map { ($0 as NSString).lastPathComponent }.joined(separator: ", ") ?? "Files".loc
         }
     }
 
@@ -83,7 +83,7 @@ struct ClipItem: Codable, Identifiable, Hashable {
             }
             let lines = t.split(separator: "\n", omittingEmptySubsequences: false).count
             return lines > 1 ? "%ld characters · %ld lines".loc(t.count, lines) : "%ld characters".loc(t.count)
-        case .link: return linkHost ?? "Link"
+        case .link: return linkHost ?? "Link".loc
         case .image: return "\(Int(imageSize?.width ?? 0)) × \(Int(imageSize?.height ?? 0)) px"
         case .file: return filePaths.map { $0.count == 1 ? "1 file".loc : "%ld files".loc($0.count) } ?? ""
         case .color: return previewText
