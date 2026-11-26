@@ -1483,6 +1483,12 @@
             "state": "translated",
             "value": "1·5·10·25분 타이머와 뽀모도로, 노치 옆에서 카운트다운해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支持 1、5、10、25 分钟计时和番茄钟，在刘海区域旁显示倒计时。"
+          }
         }
       }
     },
@@ -2018,6 +2024,12 @@
             "state": "translated",
             "value": "Raycast에서도 읽을 수 있는 JSON 파일."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出为 Raycast 也能读取的 JSON 文件。"
+          }
         }
       }
     },
@@ -2106,6 +2118,12 @@
             "state": "translated",
             "value": "암호화된 보관함의 사본이에요. 열려면 비상 키트가 필요해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "创建加密的密码库副本，打开时需要应急恢复包。"
+          }
         }
       }
     },
@@ -2116,6 +2134,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mac이 깨어 있는 동안 컵 아이콘과 남은 시간을 보여줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mac 保持唤醒时显示杯子图标和剩余时间。"
           }
         }
       }
@@ -2149,6 +2173,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "정한 비밀번호로 잠근 파일이에요. 다른 Mac으로 옮길 때 써요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用你指定的密码加密文件，便于传到另一台 Mac。"
           }
         }
       }
@@ -2194,6 +2224,12 @@
             "state": "translated",
             "value": "열릴 때 트랙패드가 살짝 톡 울려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "展开时，触控板会提供一次轻微的触感反馈。"
+          }
         }
       }
     },
@@ -2204,6 +2240,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mac이 바쁠수록 더 빨리 달리는 작은 캐릭터를 메뉴 막대에 띄워요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "菜单栏中的小人会随着 Mac 负载升高而加快跑步速度。"
           }
         }
       }
@@ -2238,6 +2280,12 @@
             "state": "translated",
             "value": "비밀 키가 담긴 PDF를 새로 만들어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成一份包含密钥的新 PDF。"
+          }
         }
       }
     },
@@ -2248,6 +2296,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "방해 금지 모드나 다른 집중 모드가 켜지거나 꺼질 때 알려줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开启或关闭勿扰模式及其他专注模式时显示提醒。"
           }
         }
       }
@@ -2271,6 +2325,12 @@
             "state": "translated",
             "value": "기기가 연결되면 알려줘요. AirPods는 양쪽과 케이스 배터리까지 보여줘요. macOS가 블루투스 권한을 물어봐요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设备连接时显示提示，并显示每只 AirPod 及充电盒的电量。macOS 会请求蓝牙访问权限。"
+          }
         }
       }
     },
@@ -2293,6 +2353,12 @@
             "state": "translated",
             "value": "카메라로 내 모습을 잠깐 확인해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用摄像头快速查看自己的画面。"
+          }
         }
       }
     },
@@ -2303,6 +2369,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Orbit이 녹화하는 동안 빨간 점과 시간을 보여줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 录制时显示红点和已录制时长。"
           }
         }
       }
@@ -2337,6 +2409,12 @@
             "state": "translated",
             "value": "노크할 때마다 무엇을 실행했는지 잠깐 보여줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每次识别到轻敲后显示提示。"
+          }
         }
       }
     },
@@ -2347,6 +2425,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제스처로 무언가 실행할 때마다 잠깐 알려줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每次手势触发操作时显示提示。"
           }
         }
       }
@@ -2370,6 +2454,12 @@
             "state": "translated",
             "value": "실행되기 직전에 모서리에 은은한 빛이 모여요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即将触发时，屏幕角落会渐渐亮起。"
+          }
         }
       }
     },
@@ -2381,6 +2471,12 @@
             "state": "translated",
             "value": "같은 표기를 세 번 확정하면 그때부터 그렇게 써요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同一拼写确认三次后，会成为默认选项。"
+          }
         }
       }
     },
@@ -2391,6 +2487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "화면 아래에 단축키 안내가 떠요. 몇 초 뒤 사라지고 키를 누르면 다시 나타나요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在屏幕底部显示快捷键提示。几秒后自动隐藏，按键时再次出现。"
           }
         }
       }
@@ -2431,6 +2533,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "AES-256이 더 안전하지만 윈도우에선 7-Zip이 있어야 열려요. ZipCrypto는 윈도우 기본 탐색기로 바로 열려요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AES-256 安全性更高，Windows 上需要使用 7-Zip 打开。ZipCrypto 可以直接用 Windows 文件资源管理器打开。"
           }
         }
       }
@@ -2653,6 +2761,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "포인터 주위에 뜨는 동작들이에요. 칸을 누르고 할 일을 고르세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "常用操作围绕指针排列。点按一个位置，即可设置该位置的操作。"
           }
         }
       }
@@ -3022,6 +3136,12 @@
             "state": "translated",
             "value": "숨긴 아이콘을 여는 버튼 하나만 메뉴 막대에 둬요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在菜单栏中添加一个按钮，用于显示已隐藏的图标。"
+          }
         }
       }
     },
@@ -3102,6 +3222,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다 풀고 나면요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成解压后执行。"
           }
         }
       }
@@ -3186,6 +3312,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "압축이 끝나면요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成压缩后执行。"
           }
         }
       }
@@ -3728,6 +3860,12 @@
             "state": "translated",
             "value": "허용됨"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已允许"
+          }
         }
       }
     },
@@ -3739,6 +3877,12 @@
             "state": "translated",
             "value": "허용됨 — 클립보드 기록 중이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已允许，剪贴板历史正在记录。"
+          }
         }
       }
     },
@@ -3749,6 +3893,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "허용…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许…"
           }
         }
       }
@@ -3903,6 +4053,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mac 전체 소리 EQ, 그리고 앱마다 볼륨과 EQ."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "调节系统均衡器，以及每个应用的音量和均衡器。"
           }
         }
       }
@@ -4233,6 +4389,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Safari와 Chrome의 비밀번호 메뉴에 뜨려면 이 빌드에 유료 Apple 개발자 계정이 필요해요. 대신 빠른 입력은 어디서나 돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要显示在 Safari 和 Chrome 的密码菜单中，此构建需要付费 Apple 开发者账号签名。也可以通过“快速访问”填充。"
           }
         }
       }
@@ -4601,6 +4763,12 @@
             "state": "translated",
             "value": "외장 드라이브처럼 다른 곳에 둔 앱도 보여요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加位于其他位置的应用，例如外置磁盘上的应用。"
+          }
         }
       }
     },
@@ -4920,6 +5088,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "10자 이상이에요. 아무 단어 몇 개를 이어 쓰면 외우긴 쉽고 맞히긴 어려워요. 잊어버리면 Orbit도 보관함을 열 수 없어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "至少 10 个字符。几个随机单词容易记住，也难以猜测。如果忘记主密码，Orbit 无法解锁密码库。"
           }
         }
       }
@@ -5623,6 +5797,12 @@
             "state": "translated",
             "value": "두 검사기가 함께 검사해요. 결과가 다르면 직접 골라요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同时使用两种检查工具。如果建议不同，由你选择。"
+          }
         }
       }
     },
@@ -5823,6 +6003,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 화면의 밝기, 대비, 음량을 조절해요. 외장 모니터도요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "调节各个显示器的亮度、对比度和音量，包括外接显示器。"
           }
         }
       }
@@ -6747,6 +6933,12 @@
             "state": "translated",
             "value": "파일이나 창을 끌고 모서리로 가도 실행돼요. 선반에 놓거나 Mission Control로 옮길 때 좋아요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将文件或窗口拖到屏幕角落，可将其拖入暂存架或调度中心。"
+          }
         }
       }
     },
@@ -7294,6 +7486,12 @@
             "state": "translated",
             "value": "실행 1분 뒤, 그다음엔 하루에 한 번 Tavi 릴리즈를 확인해요. 설치 전에 서명을 꼭 확인해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启动一分钟后检查 Tavi 更新，此后每天检查一次。每次安装前都会验证更新文件。"
+          }
         }
       }
     },
@@ -7326,6 +7524,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어느 앱에서든 선택한 글을 검사해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查任意应用中选中的文字。"
           }
         }
       }
@@ -7362,6 +7566,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "생산성, 개발자 도구, 게임… 칩으로 나눠 보여요. ⇥ 로 넘겨요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以按效率、开发工具、游戏等类别筛选。按 ⇥ 可依次切换。"
           }
         }
       }
@@ -7528,6 +7738,12 @@
             "state": "translated",
             "value": "AI 사용량 위젯에 표시할 제공자를 고르세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择在 AI 用量小组件中显示的服务。"
+          }
         }
       }
     },
@@ -7538,6 +7754,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "백업한 보관함 파일을 고르고, 키트에 적힌 비밀 키와 마스터 비밀번호를 입력하세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择备份的密码库文件，再输入应急恢复包中的密钥和你的主密码。"
           }
         }
       }
@@ -7560,6 +7782,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "위젯을 고르고 화살표로 순서를 바꾸세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择小组件，再用箭头调整顺序。"
           }
         }
       }
@@ -7605,6 +7833,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "항목을 고르면 바로 붙여넣어요. 끄면 복사만 해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开启后，选取项目会直接粘贴。关闭后，只复制到剪贴板。"
           }
         }
       }
@@ -7935,6 +8169,12 @@
             "state": "translated",
             "value": "단축키를 누른 다음 원하는 키를 누르세요. esc는 취소, ⌫는 지우기예요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点按快捷键后，按下想设置的组合键。按 Esc 取消，按 ⌫ 清除。"
+          }
         }
       }
     },
@@ -7990,6 +8230,12 @@
             "state": "translated",
             "value": "누르면 이번 달과 일정이 보여요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点按可查看月历和日程。"
+          }
         }
       }
     },
@@ -8000,6 +8246,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "메뉴 막대의 빨간 타이머를 누르거나 조절 막대에서 Esc를 누르면 멈춰요. Orbit의 조절 막대는 영상에 나오지 않아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点按菜单栏的红色计时器，或在控件中按 Esc，即可停止录制。Orbit 的录制控件不会出现在视频里。"
           }
         }
       }
@@ -8560,6 +8812,12 @@
             "state": "translated",
             "value": "남은 한도에 따라 막대 색을 바꿔요. 끄면 오빗 주황색으로 통일해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根据剩余额度给进度条着色。关闭后统一使用 Orbit 的橙色。"
+          }
         }
       }
     },
@@ -9019,6 +9277,12 @@
             "state": "translated",
             "value": "사진, PDF, 문서, 영상, 오디오를 끌어다 놓는 자리에서 바로 변환하고 편집해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拖动图片、PDF、文档、视频或音频时，可直接转换和编辑。"
+          }
         }
       }
     },
@@ -9211,6 +9475,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "비밀번호 관리 앱이 숨김 처리한 복사는 항상 건너뛰어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "密码管理器标为隐藏的内容不会加入历史记录。"
           }
         }
       }
@@ -10207,6 +10477,12 @@
             "state": "translated",
             "value": "커버와 제목, 아티스트를 잠깐 보여줘요. 누르면 재생 앱이 열려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "短暂显示封面、标题和艺人。点按可打开播放器。"
+          }
         }
       }
     },
@@ -10613,6 +10889,12 @@
             "state": "translated",
             "value": "날짜 패턴. 예: M월 d일 (E) a h:mm"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日期格式，例如 M月d日 EEEE HH:mm"
+          }
         }
       }
     },
@@ -10851,6 +11133,12 @@
             "state": "translated",
             "value": "이 Mac의 보관함과 키를 지워요. 다른 곳에서 쓰려면 먼저 백업하세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除这台 Mac 上的密码库和密钥。如需在其他设备使用，请先备份。"
+          }
         }
       }
     },
@@ -10894,6 +11182,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "거부됨 — 새로 복사한 내용을 기록할 수 없어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已拒绝，剪贴板历史无法读取新复制的内容。"
           }
         }
       }
@@ -11193,6 +11487,12 @@
             "state": "translated",
             "value": "휠 마우스와 Magic Mouse의 방향이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置鼠标滚轮和妙控鼠标的滚动方向。"
+          }
         }
       }
     },
@@ -11203,6 +11503,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "두 손가락 스크롤의 방향이에요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置双指滚动方向。"
           }
         }
       }
@@ -11621,6 +11927,12 @@
             "state": "translated",
             "value": "압축 파일을 더블클릭하면 Orbit이 바로 옆에 풀어줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连按压缩包时，Orbit 会将它解压到同一位置。"
+          }
         }
       }
     },
@@ -11631,6 +11943,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "압축 파일을 더블클릭하면 Orbit이 바로 옆에 풀어줘요. 지금 여는 앱: %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连按压缩包时，Orbit 会将它解压到同一位置。当前打开方式：%@"
           }
         }
       }
@@ -11801,6 +12119,12 @@
             "state": "translated",
             "value": "파일을 그 화면 끝으로 끌어가면 선반이 거기서 스르륵 나와요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将文件拖到任意显示器的指定边缘，即可打开暂存架。"
+          }
         }
       }
     },
@@ -11839,6 +12163,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "파일을 끌면서 Shift를 누르면 포인터 아래에 링이 열려요. Shift를 한 번 더 누르면 도구로 바뀌고, 원하는 칸에 놓으면 돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拖动文件时按 Shift，指针下会出现环形菜单。再次按 Shift 可显示工具，将文件拖到所需工具上即可。"
           }
         }
       }
@@ -11978,6 +12308,12 @@
             "state": "translated",
             "value": "위젯을 데스크탑 어디로든 끌어 놓으세요. 가장자리, 모서리, 가운데에 착 붙어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拖动小组件即可调整位置。靠近屏幕边缘、角落或中央时会吸附。"
+          }
         }
       }
     },
@@ -12043,6 +12379,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "파일을 끌어오거나 선반 단축키를 쓰면 항상 선반으로 열려요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将文件拖入或按暂存架快捷键，均会打开暂存架。"
           }
         }
       }
@@ -12131,6 +12473,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "노치에 파일을 끌어다 놓으면 선반에 보관돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将文件拖到刘海区域即可加入暂存架。"
           }
         }
       }
@@ -12480,6 +12828,12 @@
             "state": "translated",
             "value": "비어 있음"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空"
+          }
         }
       }
     },
@@ -12585,6 +12939,12 @@
             "state": "translated",
             "value": "macOS가 심한 발열을 알리면 세션을 끝내요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 报告严重过热时结束保持唤醒。"
+          }
         }
       }
     },
@@ -12595,6 +12955,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "그 앱이 종료되면 끝나요 — 다운로드나 렌더링할 때 좋아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用退出时结束。适合等待下载或渲染完成。"
           }
         }
       }
@@ -12885,6 +13251,12 @@
             "state": "translated",
             "value": "Mac의 모든 앱을 한 화면에. 한글, 영어, 초성으로 바로 찾아요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在同一个网格中浏览 Mac 上的应用。可以用韩语、英语或首字母搜索。"
+          }
         }
       }
     },
@@ -12960,6 +13332,12 @@
             "state": "translated",
             "value": "모든 화면에 한 번에 적용돼요. 직접 만든 건 우클릭해서 지울 수 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同时调整所有屏幕。右键点按自建预设可以删除。"
+          }
         }
       }
     },
@@ -13032,6 +13410,12 @@
             "state": "translated",
             "value": "모든 작업은 이 Mac 안에서 처리돼요. 원본은 그대로 두고, 결과는 원본 옆에 새 파일로 저장해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有处理都在这台 Mac 上完成。结果会保存为原文件旁的新文件。"
+          }
         }
       }
     },
@@ -13059,6 +13443,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "복사한 모든 것을 검색하고, 키 한 번으로 꺼내요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过快捷键查看或搜索已复制的内容。"
           }
         }
       }
@@ -13576,6 +13966,12 @@
             "state": "translated",
             "value": "FaceTime, Zoom, Teams, Discord 같은 통화 앱."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适用于 FaceTime、Zoom、Teams、Discord 等通话应用。"
+          }
         }
       }
     },
@@ -13897,6 +14293,12 @@
             "state": "translated",
             "value": "다운로드 폴더에 받는 중인 파일과 완료 알림을 보여줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示正在下载到“下载”文件夹的文件，完成时提醒。"
+          }
         }
       }
     },
@@ -13907,6 +14309,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "노치에 놓은 파일을 다시 끌어내거나 AirDrop·공유할 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在这里查看拖入的文件，可拖出、隔空投送或共享。"
           }
         }
       }
@@ -14093,6 +14501,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 Mac의 브라우저, 1Password, Bitwarden, Apple 암호를 찾아 줘요 — 하나 고르고 가져올 항목을 선택하세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查找此 Mac 上的浏览器、1Password、Bitwarden 和 Apple“密码”。选择来源，再勾选要导入的内容。"
           }
         }
       }
@@ -14427,6 +14841,12 @@
             "state": "translated",
             "value": "메일이나 USB처럼 용량 제한이 있을 때. Orbit이나 다른 압축 앱이 다시 합쳐서 풀어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适合有大小限制的邮件或 U 盘。Orbit 和其他解压应用可将分卷重新合并。"
+          }
         }
       }
     },
@@ -14460,6 +14880,12 @@
             "state": "translated",
             "value": "노치 타이머 시작 단축키에 쓰여요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适用于“启动刘海计时器”快捷键。"
+          }
         }
       }
     },
@@ -14470,6 +14896,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지금 소리가 나는 기기 모두요. 맥북 스피커, AirPods, USB까지요. macOS가 음량을 못 바꾸는 기기는 macOS에 맡겨요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "对当前音频输出生效，包括 MacBook 扬声器、AirPods 和 USB 设备。macOS 无法调节的输出仍交由系统处理。"
           }
         }
       }
@@ -14569,6 +15001,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "DeepL이 지원하는 언어에서 존댓말/반말을 골라요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 DeepL 支持的语言中选择正式或随意的措辞。"
           }
         }
       }
@@ -14828,6 +15266,12 @@
             "state": "translated",
             "value": "Raycast, Alfred(JSON) 또는 TextExpander(CSV)에서."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支持 Raycast、Alfred 的 JSON 文件，以及 TextExpander 的 CSV 文件。"
+          }
         }
       }
     },
@@ -14861,6 +15305,12 @@
             "state": "translated",
             "value": "캘린더 앱의 일정을 보여줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示“日历”应用中的日程。"
+          }
         }
       }
     },
@@ -14882,6 +15332,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "‘커버에서’를 고르면 앨범 아트에서 색을 뽑아 써요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“跟随封面”会从专辑封面取颜色作为强调色。"
           }
         }
       }
@@ -15254,6 +15710,12 @@
             "state": "translated",
             "value": "한 칸씩 뚝뚝 끊기지 않고 미끄러지듯 스크롤돼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滚动时在各格之间平滑过渡。"
+          }
         }
       }
     },
@@ -15601,6 +16063,12 @@
             "state": "translated",
             "value": "숨긴 아이콘은 macOS에서 아예 꺼져요. 전체 화면이든 어느 Space든 메뉴 막대에서 사라져요. 잠깐 쓰려면 Orbit 버튼을 누르세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 macOS 中隐藏图标，隐藏效果适用于全屏和所有桌面。点按 Orbit 的按钮可临时使用已隐藏的图标。"
+          }
         }
       }
     },
@@ -15661,6 +16129,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "메뉴 막대 아이콘을 숨기고 정리하고, 캘린더도 띄워요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐藏和整理菜单栏图标，也可在菜单栏显示日历。"
           }
         }
       }
@@ -15874,6 +16348,12 @@
             "state": "translated",
             "value": "높음은 살짝만 두드려도 알아듣고, 낮음은 조금 더 확실히 두드려야 하는 대신 다른 충격을 더 잘 걸러요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高灵敏度能识别更轻的敲击。低灵敏度需要稍用力，可减少误触。"
+          }
         }
       }
     },
@@ -16066,6 +16546,12 @@
             "state": "translated",
             "value": "⌥⇧를 누른 채 누르면 더 잘게 조절돼요. 조절 표시를 끄면 맥북 화면은 macOS가 처리해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住 ⌥⇧ 可微调。关闭 Orbit 提示时，MacBook 内建屏幕由 macOS 控制。"
+          }
         }
       }
     },
@@ -16181,6 +16667,12 @@
             "state": "translated",
             "value": "마우스를 올려두면 계속 떠 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将指针停在预览上可保持显示。"
+          }
         }
       }
     },
@@ -16192,6 +16684,12 @@
             "state": "translated",
             "value": "모서리에 포인터가 얼마나 머물러야 실행할지 정해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置指针在屏幕角落停留多久才触发。"
+          }
         }
       }
     },
@@ -16202,6 +16700,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "두 번째 ⌘C를 얼마나 빨리 눌러야 하는지."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "两次按 ⌘C 的最大间隔。"
           }
         }
       }
@@ -16365,6 +16869,12 @@
             "state": "translated",
             "value": "한가할 땐 초당 2프레임으로 천천히, 꽉 찼을 땐 초당 20프레임으로 전력 질주해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空闲时以每秒 2 帧慢走，满负载时以每秒 20 帧冲刺。"
+          }
         }
       }
     },
@@ -16387,6 +16897,12 @@
             "state": "translated",
             "value": "macOS가 물어보면 “허용”을 눌러야 기록할 수 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果 macOS 询问，请选择“允许”，以便记录剪贴板历史。"
+          }
         }
       }
     },
@@ -16408,6 +16924,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "얼굴을 못 알아보면 한 번 더 확인해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法识别人脸时允许再试一次。"
           }
         }
       }
@@ -16684,6 +17206,12 @@
             "state": "translated",
             "value": "메뉴 막대 아래 따로 띄워요 — 노치가 있을 때 편해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在菜单栏下方的一行显示，适合带刘海区域的屏幕。"
+          }
         }
       }
     },
@@ -16751,6 +17279,12 @@
             "state": "translated",
             "value": "메뉴 막대와 상태 카드의 퍼센트가 여유로울 땐 초록, 바쁠 땐 주황, 100%에 가까우면 빨강으로 보여요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "菜单栏和状态卡片按负载着色。较低时为绿色，繁忙时为橙色，接近 100% 时为红色。"
+          }
         }
       }
     },
@@ -16764,6 +17298,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "한글 입력 중에는 글자로 끝나는 키워드가 스페이스를 누를 때 바뀌어요. 글자 조합이 먼저 끝나야 하거든요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用韩文输入模式时，以字母结尾的关键词会在按空格后展开，让输入法先完成音节。"
           }
         }
       }
@@ -17165,6 +17705,12 @@
             "state": "translated",
             "value": "이 앱에서 나오는 곡과 영상은 보이지 않아요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不显示此应用播放的歌曲和视频。"
+          }
         }
       }
     },
@@ -17175,6 +17721,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 앱 소리로는 음악을 멈추지 않아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此应用发声时，音乐会继续播放。"
           }
         }
       }
@@ -17525,6 +18077,12 @@
             "state": "translated",
             "value": "Mac이 잠들지 않게 — 덮개를 닫아도."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "让 Mac 保持唤醒，也支持合盖使用。"
+          }
         }
       }
     },
@@ -17546,6 +18104,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "충전을 한도에서 멈춰 배터리를 오래 쓰게 해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设定充电上限，以减缓电池老化。"
           }
         }
       }
@@ -17616,6 +18180,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "화면마다 지금 밝기를 그대로 저장해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "记录每台显示器当前的亮度。"
           }
         }
       }
@@ -17845,6 +18415,12 @@
             "state": "translated",
             "value": "맥북을 두세 번 똑똑 두드리면 Orbit의 기능이 바로 실행돼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "轻敲 MacBook 两下或三下，即可执行指定的 Orbit 操作。"
+          }
         }
       }
     },
@@ -17867,6 +18443,12 @@
             "state": "translated",
             "value": "똑, 똑, 똑. 일정한 박자로 두드려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以均匀的节奏轻敲三下。"
+          }
         }
       }
     },
@@ -17877,6 +18459,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "똑, 똑."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "轻敲两下。"
           }
         }
       }
@@ -17958,6 +18546,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "윈도우에서도 한글 이름이 안 깨지고, 윈도우가 못 쓰는 문자(: ? * | …)는 비슷한 모양으로 바꿔요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "让韩文文件名在 Windows 上正常显示，并替换 Windows 文件名不允许的字符（: ? * | 等）。"
           }
         }
       }
@@ -18527,6 +19121,12 @@
             "state": "translated",
             "value": "조금 내려갈 때까지 기다렸다가 충전해요. 자잘한 충전이 줄어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许电量稍微下降后再充电，减少频繁补电。"
+          }
         }
       }
     },
@@ -18823,6 +19423,12 @@
             "state": "translated",
             "value": "Music에서 곡에 좋아요를 누르고, 좋아요 여부를 읽고, 재생 정보가 안 될 때도 계속 동작해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可在“音乐”中收藏歌曲并读取收藏状态，即使系统的“正在播放”接口不可用也能操作。"
+          }
         }
       }
     },
@@ -18918,6 +19524,12 @@
             "state": "translated",
             "value": "리튬 배터리는 꽉 찬 채로 있을 때 가장 빨리 닳아요. 하루 종일 꽂아 쓰는 Mac이라면 80%가 딱 좋아요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "长时间满电会加快锂电池老化。Mac 大部分时间接通电源时，可将上限设为 80%。"
+          }
         }
       }
     },
@@ -18984,6 +19596,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "실시간 상태와 클릭 한 번으로 쓰는 Mac 도구. 카드를 누르면 무엇이 쓰고 있는지 보여요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看实时系统状态和常用 Mac 工具。点按卡片可查看资源占用详情。"
           }
         }
       }
@@ -19159,6 +19777,12 @@
             "state": "translated",
             "value": "암호를 아는 사람만 열 수 있게 잠가요. 압축할 때마다 물어봐요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "对压缩包加密，输入正确密码才能打开。"
+          }
         }
       }
     },
@@ -19306,6 +19930,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "로그인, 카드, 메모를 마스터 비밀번호와 이 Mac에만 있는 비밀 키로 잠가 둬요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用主密码和仅存于本机的密钥保护登录信息、卡片及备注。"
           }
         }
       }
@@ -19514,6 +20144,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "낮을수록 배터리를 덜 써요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "较低的帧率更省电。"
           }
         }
       }
@@ -19765,6 +20401,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Orbit을 포함한 클립보드 앱이 기록하지 않도록 표시해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加隐藏标记，防止剪贴板工具保存密码。"
           }
         }
       }
@@ -20346,6 +20988,12 @@
             "state": "translated",
             "value": "Mac을 안 만진 시간이에요. Orbit을 끌 때도 잠겨요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mac 闲置指定分钟后锁定。退出 Orbit 时也会锁定。"
+          }
         }
       }
     },
@@ -20462,6 +21110,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "모니터가 맥북 화면 밝기를 따라가요. 자동 밝기가 켜져 있으면 방 밝기에 맞춰져요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "外接显示器跟随内建屏幕。开启自动亮度后，内建屏幕会随环境光变化。"
           }
         }
       }
@@ -20968,6 +21622,12 @@
             "state": "translated",
             "value": "Music, Spotify, TIDAL, 팟캐스트 같은 음악 앱과 YouTube Music처럼 브라우저에서 듣는 음악이 보여요. 브라우저의 다른 영상은 빼요. YouTube 영상까지 보려면 전부를 고르세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示 Apple“音乐”、Spotify、TIDAL 和“播客”等应用的内容，以及浏览器中的 YouTube Music 等音乐。要显示 YouTube 等网页视频，请选择“全部”。"
+          }
         }
       }
     },
@@ -21000,6 +21660,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "영상이 시작되면 음악, Spotify 같은 음악 앱을 멈추고, 영상이 멈추면 잠시 후 다시 틀어 줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "视频开始播放时，音乐、Spotify 等音乐应用会暂停。视频停止后稍等片刻便会继续播放。"
           }
         }
       }
@@ -21036,6 +21702,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "녹화 중 조절 막대에서 언제든 끌 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以随时在录制控件中静音。"
           }
         }
       }
@@ -21171,6 +21843,12 @@
             "state": "translated",
             "value": "이름, 제품명, 줄임말처럼 맞춤법 검사가 절대 고치면 안 되는 단어예요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将不想更改的人名、产品名或俚语添加到此列表。"
+          }
         }
       }
     },
@@ -21281,6 +21959,12 @@
             "state": "translated",
             "value": "키 입력을 알아채려면 손쉬운 사용 권한이 필요해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要辅助功能权限才能侦测按键。"
+          }
         }
       }
     },
@@ -21302,6 +21986,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "노치가 있는 디스플레이가 필요해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要带刘海区域的显示器。"
           }
         }
       }
@@ -22799,6 +23489,12 @@
             "state": "translated",
             "value": "끄면 원래 쓰던 입력 소스로 돌아가요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭后，切回之前使用的键盘输入源。"
+          }
         }
       }
     },
@@ -22810,6 +23506,12 @@
             "state": "translated",
             "value": "‘한 칸에 몇 줄’을 쓰는 동안은 꺼져요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设定滚轮每格行数后，此项会关闭。"
+          }
         }
       }
     },
@@ -22820,6 +23522,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "부드러운 스크롤을 켜면 꺼져요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用平滑滚动时，此项会关闭。"
           }
         }
       }
@@ -22843,6 +23551,12 @@
             "state": "translated",
             "value": "꺼짐 — macOS 설정 하나가 둘 다에 적용돼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭后，鼠标和触控板都会跟随 macOS 的统一设置。"
+          }
         }
       }
     },
@@ -22853,6 +23567,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "꺼져 있어요. 켜면 .zip이나 폴더에서 스페이스를 눌러 안을 볼 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已关闭。启用后，选中 ZIP 或文件夹并按空格即可预览。"
           }
         }
       }
@@ -22909,6 +23629,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "끄면 카드가 남아서 바뀐 글을 다시 검사해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭后，浮窗会保持打开，并重新检查替换后的文字。"
           }
         }
       }
@@ -23021,6 +23747,12 @@
             "state": "translated",
             "value": "데스크탑에, 창 아래에 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示在桌面上，位于窗口下方。"
+          }
         }
       }
     },
@@ -23098,6 +23830,12 @@
             "state": "translated",
             "value": "다른 아이콘처럼 한 가지 색으로 보여요. 끄면 원래 색 그대로 나와요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用与其他菜单栏图标一致的单色。关闭后保留动画原有颜色。"
+          }
         }
       }
     },
@@ -23164,6 +23902,12 @@
             "state": "translated",
             "value": "한 가지 색 러너가 시스템 강조 색상으로 바뀌어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "单色动画使用系统强调色。"
+          }
         }
       }
     },
@@ -23229,6 +23973,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "배터리로 쓰는 동안에만."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅在使用电池供电时生效。"
           }
         }
       }
@@ -23825,6 +24575,12 @@
             "state": "translated",
             "value": "ZIP, 7Z, RAR, TAR, GZ, BZ2, XZ, ZST, LZ, ISO, DMG, CAB, LHA, CPIO, 나눠진 조각(.001)까지 풀 수 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支持 ZIP、7Z、RAR、TAR、GZ、BZ2、XZ、ZST、LZ、ISO、DMG、CAB、LHA、CPIO 以及以 .001 开头的分卷。"
+          }
         }
       }
     },
@@ -23846,6 +24602,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "노치의 선반 탭으로 열려요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开刘海区域的“暂存架”标签页。"
           }
         }
       }
@@ -23902,6 +24664,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "연결된 Apple Watch로도 돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "也可以使用已配对的 Apple Watch。"
           }
         }
       }
@@ -24016,6 +24784,12 @@
             "state": "translated",
             "value": "Orbit 도우미가 혼자서도 한도를 지켜요. 방전은 Orbit을 끄면 항상 멈춰요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 助手会维持充电上限。退出 Orbit 时始终停止主动放电。"
+          }
         }
       }
     },
@@ -24113,6 +24887,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "각 폴더 안의 폴더도 한 단계 살펴봐서 Adobe 같은 묶음 앱도 보여요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 也会查看这些目录下的一层子目录，让 Adobe 等应用套件能出现在列表中。"
           }
         }
       }
@@ -24290,6 +25070,12 @@
             "state": "translated",
             "value": "윈도우에서 만든 ZIP의 이름도 알아서 읽어요. 그래도 이름이 깨지면 만든 컴퓨터의 언어를 골라 주세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 会自动识别 Windows ZIP 的文件名编码。如果仍然乱码，可选择创建压缩包时使用的语言。"
+          }
         }
       }
     },
@@ -24398,6 +25184,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Orbit은 비밀 키를 이 Mac의 키체인에 보관해요. 새 Mac에서 다시 열려면 키트가 필요해요 — 키트를 저장한 뒤에만 보관함이 만들어져요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 将密钥保存在 Mac 的钥匙串中。请保存应急恢复包，用于在新 Mac 上恢复。保存后才会创建密码库。"
           }
         }
       }
@@ -24600,6 +25392,12 @@
             "state": "translated",
             "value": "선택한 폴더에서 한도 정보를 읽어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 从你选定的文件夹读取用量快照。"
+          }
         }
       }
     },
@@ -24641,6 +25439,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Orbit이 모니터 밝기를 바꾸고 자체 표시를 띄워요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 会调节外接显示器的亮度并显示屏幕提示。"
           }
         }
       }
@@ -24740,6 +25544,12 @@
             "state": "translated",
             "value": "없어도 Orbit은 동작해요 — 필요한 기능만 그때 물어봐요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以先使用 Orbit，需要特定权限的功能会在使用时请求授权。"
+          }
         }
       }
     },
@@ -24764,6 +25574,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "macOS 대신 Orbit의 밝기 막대가 바뀐 화면에 떠요. 맥북 화면과 키보드 조명도요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在发生亮度变化的屏幕上显示 Orbit 的亮度条，也适用于 MacBook 的屏幕与键盘背光。"
           }
         }
       }
@@ -24878,6 +25694,12 @@
             "state": "translated",
             "value": "Orbit과 같은 일을 하는 앱은 같은 단축키와 아이콘을 두고 부딪혀요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "功能相同的其他应用可能与 Orbit 的快捷键或菜单栏图标发生冲突。"
+          }
         }
       }
     },
@@ -24922,6 +25744,12 @@
             "state": "translated",
             "value": "다른 화면에는 위쪽에 노치를 그려줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在其他屏幕顶部绘制刘海区域。"
+          }
         }
       }
     },
@@ -24946,6 +25774,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전체 화면 영상이나 게임을 가리지 않아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全屏播放视频或玩游戏时隐藏。"
           }
         }
       }
@@ -25183,6 +26017,12 @@
             "state": "translated",
             "value": "암호 관리 앱은 처음부터 빠져 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "默认忽略密码管理器。"
+          }
         }
       }
     },
@@ -25277,6 +26117,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다른 앱에서 붙여넣기"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "从其他应用粘贴"
           }
         }
       }
@@ -25468,6 +26314,12 @@
             "state": "translated",
             "value": "배터리가 이보다 뜨거우면 충전을 멈춰요. 열이 배터리를 가장 빨리 늙게 해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "电池高于此温度时暂停充电，以减缓高温造成的老化。"
+          }
         }
       }
     },
@@ -25617,6 +26469,12 @@
             "state": "translated",
             "value": "미리보기가 뜰 구석을 고르세요. 화면 가장자리 쪽으로 밀면 사라져요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择屏幕角。将预览扫向屏幕边缘即可关闭。"
+          }
         }
       }
     },
@@ -25626,6 +26484,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "스크린샷 폴더처럼 자주 꺼내 쓰는 폴더를 고르면, 노치에서 파일을 바로 보고 끌어낼 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择一个文件夹，例如截图目录，即可在刘海区域查看文件并将其拖出。"
           }
         }
       }
@@ -25748,6 +26612,12 @@
             "state": "translated",
             "value": "무작위로 골라요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "随机选择一个动画。"
+          }
         }
       }
     },
@@ -25858,6 +26728,12 @@
             "state": "translated",
             "value": "고정한 항목은 항상 남아요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "固定的项目会始终保留。"
+          }
         }
       }
     },
@@ -25868,6 +26744,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "고정한 항목은 남아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "固定的项目会保留。"
           }
         }
       }
@@ -26088,6 +26970,12 @@
             "state": "translated",
             "value": "노치를 가리키면 열려요. 클릭해도 언제나 열려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将指针悬停在刘海区域上即可展开，也可以点按打开。"
+          }
         }
       }
     },
@@ -26272,6 +27160,12 @@
             "state": "translated",
             "value": "Finder에서 .zip, .7z, .rar나 폴더를 고르고 스페이스를 누르면, 풀지 않고 안에 뭐가 있는지 보여줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在访达中选中 ZIP、7Z、RAR 或文件夹，按空格即可直接预览内容。"
+          }
         }
       }
     },
@@ -26355,6 +27249,12 @@
             "state": "translated",
             "value": "같은 키를 한 번 더 누르면 평소 캡처 후 동작으로 돌아가요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再次按下同一个键，执行通常的截图后操作。"
+          }
         }
       }
     },
@@ -26365,6 +27265,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아무 글자에서 ⌘C를 두 번 누르면 바로 번역돼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选中文字并连按两次 ⌘C，即可在当前位置翻译。"
           }
         }
       }
@@ -26698,6 +27604,12 @@
             "state": "translated",
             "value": "화면 모서리로 포인터를 밀어 넣으면 Orbit의 기능이 바로 실행돼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将指针移到屏幕角落，即可执行指定的 Orbit 操作。"
+          }
         }
       }
     },
@@ -26719,6 +27631,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "스니펫 안 어디에나 넣을 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可将这些占位符放在文本片段的任意位置。"
           }
         }
       }
@@ -26794,6 +27712,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "빠른 입력은 앞에 있는 앱에서 아이디와 비밀번호 칸을 찾아 대신 입력해요. 브라우저에서는 먼저 페이지 주소를 확인해서, 비슷하게 생긴 가짜 사이트에는 넣지 않아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速访问会在前台应用中查找并填写用户名和密码。在浏览器中，它会先核对网页地址，避免把登录信息填到仿冒网站上。"
           }
         }
       }
@@ -28239,6 +29163,12 @@
             "state": "translated",
             "value": "동작 위에 머무르면 테두리가 차고 실행돼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将指针停留在操作上，进度填满后即会执行。"
+          }
         }
       }
     },
@@ -28455,6 +29385,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "치자마자, 또는 키워드 뒤에 스페이스를 누르면."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入关键词后立即展开，或等到按空格后展开。"
           }
         }
       }
@@ -28708,6 +29644,12 @@
             "state": "translated",
             "value": "오른쪽 대신 왼쪽으로 달려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将奔跑方向改为向左。"
+          }
         }
       }
     },
@@ -28718,6 +29660,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Orbit이 켜져 있을 때 실행돼요. 예를 들어 매주 금요일 아침 나가기 전에 완충할 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orbit 打开时按计划执行，例如每周五出门前充满电。"
           }
         }
       }
@@ -29587,6 +30535,12 @@
             "state": "translated",
             "value": "스크린샷과 화면 글자 복사에 필요해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用于截图和复制屏幕中的文字。"
+          }
         }
       }
     },
@@ -29619,6 +30573,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "스크린샷, 주석, 화면 고정, 글자 인식."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "截图、标注、固定图像和文字识别。"
           }
         }
       }
@@ -30011,6 +30971,12 @@
             "state": "translated",
             "value": "무엇이 공간을 쓰는지 보고, 안전하게 정리해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看储存空间占用并清理可以移除的内容。"
+          }
         }
       }
     },
@@ -30021,6 +30987,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "확인하는 동안 노치 아래에 내 모습이 보여요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "识别人脸时，在刘海区域下方查看摄像头预览。"
           }
         }
       }
@@ -30115,6 +31087,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어디서든 글을 선택하고 단축키를 누르면 맞춤법, 띄어쓰기, 문법을 그 자리에서 고쳐요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选中文字后按快捷键，即可在当前位置检查拼写、空格和语法。"
           }
         }
       }
@@ -30376,6 +31354,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "위젯을 두 개 표시할 때 왼쪽과 오른쪽의 너비를 정하세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同时显示两个小组件时，设置左右两侧的宽度。"
           }
         }
       }
@@ -30783,6 +31767,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "짧으면 빠르고, 길면 실수로 고르는 걸 막아줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缩短停留时间会更快触发，延长则能减少误触。"
           }
         }
       }
@@ -31257,6 +32247,12 @@
             "state": "translated",
             "value": "상태 표시: 충전 중엔 주황, 멈추면 초록, 배터리로 쓸 땐 꺼져요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "橙色表示正在充电，绿色表示暂停充电，使用电池时熄灭。"
+          }
         }
       }
     },
@@ -31329,6 +32325,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "노치 홈에서 선택한 음악, 캘린더, AI 사용량 위젯을 보여줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开刘海区域的主页时，显示你选定的音乐、日历和 AI 用量小组件。"
           }
         }
       }
@@ -31412,6 +32414,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "진행 중인 동안 닫힌 노치 양옆에 보여요. macOS 기본 AirPods “연결됨” 배너는 앱이 끌 수 있는 설정이 없어서 함께 나타나요 — 알림 설정에 항목이 있으면 직접 꺼 주세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活动进行时显示在收起的刘海区域旁。macOS 的 AirPods“已连接”横幅也会显示，可在系统通知设置中查看是否能关闭。"
           }
         }
       }
@@ -31506,6 +32514,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "바로 로그인해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填充后立即尝试登录。"
           }
         }
       }
@@ -31669,6 +32683,12 @@
             "state": "translated",
             "value": ".DS_Store, ._ 파일, Thumbs.db 같은 쓸모없는 파일을 빼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳过 .DS_Store、._ 开头的文件以及 Thumbs.db。"
+          }
         }
       }
     },
@@ -31792,6 +32812,12 @@
             "state": "translated",
             "value": "더 작게 만들수록 조금 더 걸려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "压缩率越高，通常耗时越长。"
+          }
         }
       }
     },
@@ -31865,6 +32891,12 @@
             "state": "translated",
             "value": "단축키로는 맨 앞 창을, 링으로는 포인터 아래 창을 정렬해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用快捷键排列最前面的窗口，或用环形菜单排列指针下的窗口。"
+          }
         }
       }
     },
@@ -31914,6 +32946,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Touch ID만 쓰다 잊어버리지 않게요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帮助你在日常使用触控 ID 时记住主密码。"
           }
         }
       }
@@ -32052,6 +33090,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "앱에서 나는 소리를 녹음해요. Orbit 소리는 빼요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "录制应用的声音，跳过 Orbit 的提示音。"
           }
         }
       }
@@ -32373,6 +33417,12 @@
             "state": "translated",
             "value": "스테이지 매니저 막대가 보이는 중 — 그 옆까지만 채워요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "台前调度已展开，窗口会排列在它旁边。"
+          }
         }
       }
     },
@@ -32619,6 +33669,12 @@
             "state": "translated",
             "value": "다시 켤 때까지 멈춰 있어요. 메뉴 막대에서 누르면 상태를 볼 수 있어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复前保持静止。点按菜单栏图标可查看统计数据。"
+          }
         }
       }
     },
@@ -32792,6 +33848,12 @@
             "state": "translated",
             "value": "사진으로는 열리지 않게 해요. 조금 더 걸려요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过眨眼检测防止照片解锁，验证会多花一点时间。"
+          }
         }
       }
     },
@@ -32905,6 +33967,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "엄격할수록 닮은 사람을 잘 걸러내고, 느슨할수록 안경이나 어두운 곳에서도 잘 인식해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "较严格的设置更容易拒绝相似的人脸。较宽松的设置更适合戴眼镜或光线较暗时使用。"
           }
         }
       }
@@ -33565,6 +34633,12 @@
             "state": "translated",
             "value": "터미널, iTerm, Warp, Ghostty, kitty."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支持“终端”、iTerm、Warp、Ghostty 和 kitty。"
+          }
         }
       }
     },
@@ -33614,6 +34688,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이미 그 언어로 된 글은 두 번째 언어로 번역해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果原文已是第一目标语言，就翻译成第二目标语言。"
           }
         }
       }
@@ -33897,6 +34977,12 @@
             "state": "translated",
             "value": "자주 쓰는 앱을 맨 위에 모아요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将你切换到次数最多的应用放在顶部。"
+          }
         }
       }
     },
@@ -33930,6 +35016,12 @@
             "state": "translated",
             "value": "충전기를 꽂거나 뺄 때 배터리 잔량을 보여줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连接或断开电源时显示电量。"
+          }
         }
       }
     },
@@ -33951,6 +35043,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "카메라 노치가 음악, 타이머, 파일, 알림으로 커졌다가 다시 쏙 들어가요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在刘海区域展开显示音乐、计时器、文件和通知，用完后可收起。"
           }
         }
       }
@@ -33974,6 +35072,12 @@
             "state": "translated",
             "value": "음악이 나오는 동안 노치 양옆에 커버와 작은 이퀄라이저가 보여요. 마우스를 올리면 재생 버튼이 나와요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放音乐时，在刘海区域两侧显示封面和均衡器动画。将指针移过去可显示控件。"
+          }
         }
       }
     },
@@ -33984,6 +35088,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "재생 중일 때 앨범 커버와 움직이는 막대를 보여줘요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放时显示封面和跳动的音频条。"
           }
         }
       }
@@ -34085,6 +35195,12 @@
             "state": "translated",
             "value": "최근 복사한 5개. 클릭하면 붙여넣어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示最近复制的五个项目。点按任意项目即可粘贴。"
+          }
         }
       }
     },
@@ -34140,6 +35256,12 @@
             "state": "translated",
             "value": "거울은 직접 켤 때만 카메라를 쓰고, 노치가 닫히면 바로 꺼요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开镜子时启用摄像头，收起刘海区域时关闭摄像头。"
+          }
         }
       }
     },
@@ -34173,6 +35295,12 @@
             "state": "translated",
             "value": "캐릭터 옆에 “23%”처럼 수치를 보여줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在动画旁显示读数，例如“23%”。"
+          }
         }
       }
     },
@@ -34205,6 +35333,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "디스플레이 페이지와 같은 설정이에요. Orbit HUD를 쓰려면 디스플레이를 켜 두세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "与“显示器”页中的设置相同。要使用 Orbit 的屏幕提示，请启用显示器控制。"
           }
         }
       }
@@ -34250,6 +35384,12 @@
             "state": "translated",
             "value": "키로 바꿀 화면이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择亮度键控制的屏幕。"
+          }
         }
       }
     },
@@ -34282,6 +35422,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "단축키, 링, 런처로 선택한 글을 검사해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以通过快捷键、环形菜单或启动器检查选中的文字。"
           }
         }
       }
@@ -34584,6 +35730,12 @@
             "state": "translated",
             "value": "이 Mac에는 충전만 멈추는 스위치가 없어서, 잠깐 배터리로 돌다가 다시 충전하는 식으로 한도를 지켜요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Mac 无法单独暂停充电。Orbit 会短暂切换到电池供电，再重新充电，以维持设定的上限。"
+          }
         }
       }
     },
@@ -34682,6 +35834,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 기기는 볼륨을 직접 조절해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备自行控制音量。"
           }
         }
       }
@@ -35123,6 +36281,12 @@
             "state": "translated",
             "value": "팁탭으로 탭 넘기기, 세 손가락 탭으로 가운데 클릭, 옆 버튼으로 뒤로·앞으로 등을 꺼진 채로 추가해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可添加 TipTap 切换标签页、三指轻点模拟中键、鼠标侧键前进或后退等设置。添加后默认关闭。"
+          }
         }
       }
     },
@@ -35464,6 +36628,12 @@
             "state": "translated",
             "value": "Touch ID는 Secure Enclave가 확인해요. 얼굴 잠금 해제는 Orbit이 확인해서 덜 엄격하니, 혼자 쓰는 Mac에서만 켜세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触控 ID 由安全隔区验证，人脸解锁由 Orbit 验证，验证条件较宽松。请在仅由你使用的 Mac 上使用人脸解锁。"
+          }
         }
       }
     },
@@ -35530,6 +36700,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "트랙패드 제스처, 마우스 버튼, 키로 무엇이든 실행해요. 모든 앱에서, 또는 고른 앱에서만요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将触控板手势、鼠标按键或键盘按键设为操作触发器。可以应用于所有应用或指定应用。"
           }
         }
       }
@@ -35637,6 +36813,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "클립보드에 있는 글을 번역해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译剪贴板中的文字。"
           }
         }
       }
@@ -36057,6 +37239,12 @@
             "state": "translated",
             "value": "반대로 해요. 한가할 땐 뛰고, 바쁠 땐 걸어요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反转速度变化，空闲时冲刺，负载较高时慢走。"
+          }
         }
       }
     },
@@ -36173,6 +37361,12 @@
             "state": "translated",
             "value": "시스템 설정 › 일반 › 로그인 항목 및 확장 프로그램 › 훑어보기에서 ‘Orbit Preview’를 켜세요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "前往“系统设置 → 通用 → 登录项与扩展 → 快速查看”，启用“Orbit 预览”。"
+          }
         }
       }
     },
@@ -36261,6 +37455,12 @@
             "state": "translated",
             "value": "이 페이지의 옵션을 모두 끄고 충전을 macOS에 돌려줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭本页所有选项，将充电控制交还给 macOS。"
+          }
         }
       }
     },
@@ -36282,6 +37482,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "노치 위에서 두 손가락으로 아래로 쓸면 열리고, 위로 쓸면 닫혀요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在刘海区域双指下扫可展开，上扫可收起。"
           }
         }
       }
@@ -36321,6 +37527,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어디서든 짧은 키워드를 치면 저장해둔 글로 바뀌어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "键入简短的关键词，即可展开为你保存的文字。"
           }
         }
       }
@@ -36387,6 +37599,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "한/영 전환 없이 그냥 쓰세요 — Tavi가 단어마다 알아서 정해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tavi 会逐词判断语言，输入时无需手动切换韩语和英语。"
           }
         }
       }
@@ -36789,6 +38007,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "비공식 연결이에요. 끄면 한국어도 이 Mac 안에서만 검사해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这是非官方的在线服务。关闭后，韩语检查仅在此 Mac 上进行。"
           }
         }
       }
@@ -37305,6 +38529,12 @@
             "state": "translated",
             "value": "가로 스크롤에도 같은 방향을 써요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "横向滚动也使用同样的方向。"
+          }
         }
       }
     },
@@ -37434,6 +38664,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "앱 잠금에서 등록한 얼굴을 써요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用你在人脸解锁中录入的人脸。"
           }
         }
       }
@@ -37825,6 +39061,12 @@
             "state": "translated",
             "value": "볼륨, 밝기, 키보드 조명 — 노치에서 커지거나, 화면 아래에, 또는 macOS 기본으로."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音量、亮度和键盘背光提示可显示在刘海区域、屏幕底部，也可以使用 macOS 的提示。"
+          }
         }
       }
     },
@@ -38198,6 +39440,12 @@
             "state": "translated",
             "value": "메뉴 막대에서 러너를 누르면 보이는 항목이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置点按菜单栏动画时显示哪些数据。"
+          }
         }
       }
     },
@@ -38209,6 +39457,12 @@
             "state": "translated",
             "value": "숨긴 아이콘을 볼 때 메뉴 막대에서 누르는 아이콘이에요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择用于显示隐藏图标的菜单栏按钮。"
+          }
         }
       }
     },
@@ -38219,6 +39473,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mac에서 열려 있는 포트와 그걸 띄운 프로젝트를 보여줘요. 런처에 포트 번호를 쳐도 바로 찾아가요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看此 Mac 上正在监听的端口和启动它们的项目。在启动器输入端口号即可跳转。"
           }
         }
       }
@@ -38292,6 +39552,12 @@
             "state": "translated",
             "value": "지금 듣는 곡을 데스크탑에 — 어떤 앱이든, 내 마음대로 꾸민 모습으로."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在桌面上显示各应用正在播放的内容，并自定义外观。"
+          }
         }
       }
     },
@@ -38337,6 +39603,12 @@
             "state": "translated",
             "value": "브라우저의 YouTube Music처럼 앱이 작은 커버를 넘겨주면, Apple Music 카탈로그에서 그 곡의 커버를 찾아와요. 제목과 아티스트만 보내요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用提供的封面分辨率较低时，例如浏览器中的 YouTube Music，Orbit 会在 Apple Music 曲库中查找清晰封面。查询时只发送歌曲标题和艺人名称。"
+          }
         }
       }
     },
@@ -38347,6 +39619,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "앱이 메뉴 막대에 처음 아이콘을 띄우면 바로 숨김으로 보내요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用首次添加菜单栏图标时，直接将其放到隐藏区。"
           }
         }
       }
@@ -38387,6 +39665,12 @@
             "state": "translated",
             "value": "HDMI나 DisplayPort로 모니터에서 소리가 날 때요. macOS는 이 음량을 못 바꿔요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适用于通过 HDMI 或 DisplayPort 播放声音、且 macOS 无法调节音量的显示器。"
+          }
         }
       }
     },
@@ -38414,6 +39698,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "잠금 화면에서 얼굴이 맞으면 Orbit이 로그인 암호를 대신 입력해요. 키를 누르거나 트랙패드를 만지거나 화면이 깨어날 때만 확인하고, 잠근 직후에는 확인하지 않아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在锁定屏幕通过人脸验证后，Orbit 会代你输入登录密码。按键、触碰触控板或唤醒屏幕时才开始识别。"
           }
         }
       }
@@ -38676,6 +39966,12 @@
             "state": "translated",
             "value": "창 정렬, 바로 붙여넣기, 마우스 버튼 링에 필요해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用于窗口吸附、直接粘贴，以及通过鼠标按键打开环形菜单。"
+          }
         }
       }
     },
@@ -38748,6 +40044,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "한도를 켜두면 Mac이 잠들 때마다 넘치지 않게 충전을 멈춰요. 이걸 켜면 대신 깨어 있으면서 한도까지 마저 충전해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置充电上限时，Mac 睡眠会暂停充电。开启此项可保持唤醒，继续充至上限。"
           }
         }
       }
@@ -38864,6 +40166,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어느 브라우저의 YouTube든, 동영상 플레이어나 소리 나는 다른 앱이든 다 돼요. 직접 멈추거나 바꾼 음악은 건드리지 않아요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适用于浏览器中的 YouTube、视频播放器和其他会发声的应用。手动暂停或切换过的音乐会保持原样。"
           }
         }
       }
@@ -39280,6 +40588,12 @@
             "state": "translated",
             "value": "암호 대신 얼굴로 풀어요. 잠금 화면에서도, macOS가 Touch ID나 암호를 물을 때도요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在锁定屏幕，或 macOS 请求触控 ID 或密码时，可以使用人脸验证。"
+          }
         }
       }
     },
@@ -39441,6 +40755,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "파일을 압축하고, 어떤 압축 파일이든 풀어요. ZIP, 7Z, RAR 등등."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "压缩文件或解压 ZIP、7Z、RAR 等归档文件。"
           }
         }
       }
@@ -40487,6 +41807,12 @@
             "state": "translated",
             "value": "macOS가 앱마다 한 번 물어봐요. 꺼도 Orbit은 재생 정보로 모든 앱을 보고 제어해요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 会对每个应用询问一次。如果未授权，Orbit 仍能通过“正在播放”查看和控制应用。"
+          }
         }
       }
     },
@@ -40735,6 +42061,12 @@
             "state": "translated",
             "value": "아이콘이 넘치면 macOS가 띄우는 버튼이에요. Orbit이 가리고, 그 자리를 누르면 macOS가 숨겨 둔 아이콘까지 Orbit 막대에 보여 줘요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "图标无法放下时，macOS 会显示此按钮。开启后，点按该位置会打开 Orbit 的图标栏，其中也包含被 macOS 收起的图标。"
+          }
         }
       }
     },
@@ -40756,6 +42088,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "macOS는 모든 기기에 같은 방향을 써요. Orbit에서는 마우스와 트랙패드를 따로 정할 수 있어요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 为设备统一设置滚动方向。Orbit 可以分别设置鼠标和触控板的方向。"
           }
         }
       }
@@ -40800,6 +42138,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "macOS 기능은 나중에 뽑을 것 같을 때 80%에서 멈춰요. 둘이 겹치지 않게 꺼주세요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS 预测你稍后会拔掉电源时，会暂缓充到 80% 以上。可以关闭它，避免两个充电策略同时调整。"
           }
         }
       }
@@ -41950,6 +43294,12 @@
             "state": "translated",
             "value": "‘타이머로 영역 캡처’를 누르면 이만큼 센 다음 영역을 고르게 돼요. 그 사이 메뉴를 열어두면 메뉴까지 같이 찍혀요."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“延时选区截图”会先倒计时，再让你选取区域。倒计时期间可以打开想截图的菜单。"
+          }
         }
       }
     },
@@ -42031,6 +43381,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "⌘C 두 번은 그대로 번역이고, 한 번 더 누르면 맞춤법을 검사해요."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按两次 ⌘C 仍会翻译，第三次按下时改为检查拼写。"
           }
         }
       }
