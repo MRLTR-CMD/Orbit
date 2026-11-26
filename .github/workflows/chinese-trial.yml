@@ -1,4 +1,4 @@
-name: Chinese trial for Intel Mac
+name: Chinese trial for macOS
 
 on:
   push:
@@ -14,7 +14,20 @@ concurrency:
 
 jobs:
   build:
-    runs-on: macos-26-intel
+    name: Build ${{ matrix.edition }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - edition: Intel
+            runner: macos-26-intel
+            arch: x86_64
+            artifact: Orbit-Chinese-Intel
+          - edition: Apple Silicon
+            runner: macos-26
+            arch: arm64
+            artifact: Orbit-Chinese-Apple-Silicon
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v6
@@ -23,10 +36,13 @@ jobs:
           python3 tools/regressions/settings-index-tests.py
           python3 tools/regressions/check-metadata.py
       - name: Build and package the Chinese trial
-        run: bash tools/build-chinese-trial.sh
+        env:
+          ORBIT_TRIAL_ARCH: ${{ matrix.arch }}
+          ORBIT_TRIAL_ARCHIVE: dist/${{ matrix.artifact }}.zip
+        run: bash tools/build-chinese-trial.sh "$ORBIT_TRIAL_ARCHIVE"
       - uses: actions/upload-artifact@v6
         with:
-          name: Orbit-Chinese-Intel
-          path: dist/Orbit-Chinese-Intel.zip
+          name: ${{ matrix.artifact }}
+          path: dist/${{ matrix.artifact }}.zip
           if-no-files-found: error
           retention-days: 14

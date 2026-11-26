@@ -4,10 +4,10 @@
 
 Orbit 把截图、剪贴板历史、启动器、窗口排列、翻译、菜单栏整理、防止休眠和系统监控等功能放在一个原生 macOS 应用中。可以从菜单栏、快捷键或指针旁的环形菜单打开常用工具。
 
-## 在 Intel Mac 上试用
+## 在 Mac 上试用
 
-1. 从本仓库的 [Actions](https://github.com/MRLTR-CMD/Orbit/actions/workflows/chinese-trial.yml) 打开最近一次成功的构建，在 **Artifacts** 下载 `Orbit-Chinese-Intel`。
-2. 解压下载文件中的 `Orbit-Chinese-Intel.zip`，把 `Orbit 简体中文.app` 放进“应用程序”。
+1. 从本仓库的 [Actions](https://github.com/MRLTR-CMD/Orbit/actions/workflows/chinese-trial.yml) 打开最近一次成功的构建。在 **Artifacts** 按机型下载，Intel Mac 选 `Orbit-Chinese-Intel`，M 系列芯片选 `Orbit-Chinese-Apple-Silicon`。
+2. 解压里面的试用版 ZIP，把 `Orbit 简体中文.app` 放进“应用程序”。
 3. 退出正在运行的原版 Orbit，再打开中文版。简体中文系统会自动使用中文，也可以在 **通用 → 语言 → 简体中文** 选择后点按“重新打开”。
 4. 可在设置搜索框输入“窗口管理”“剪贴板”或“菜单栏”。
 
@@ -15,10 +15,11 @@ Orbit 把截图、剪贴板历史、启动器、窗口排列、翻译、菜单�
 
 ## 本地构建
 
-使用完整的 Xcode 26 和 Python 3。在仓库根目录运行以下命令，生成 Intel 试用包 `dist/Orbit-Chinese-Intel.zip`。
+使用完整的 Xcode 26 和 Python 3。在仓库根目录按目标机型运行对应命令，安装包会生成在 `dist/`。
 
 ```bash
-bash tools/build-chinese-trial.sh
+ORBIT_TRIAL_ARCH=x86_64 bash tools/build-chinese-trial.sh
+ORBIT_TRIAL_ARCH=arm64 bash tools/build-chinese-trial.sh
 ```
 
 中文源词表位于 `tools/i18n/zh-Hans*.json`。更改后运行 `python3 tools/i18n.py`，同时提交源词表和生成的字符串目录。系统权限说明、访达服务名称和快速查看使用各自的 `.strings` 资源。

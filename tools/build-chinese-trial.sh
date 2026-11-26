@@ -2,7 +2,13 @@
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
-archive="${1:-$PWD/dist/Orbit-Chinese-Intel.zip}"
+arch="${ORBIT_TRIAL_ARCH:-x86_64}"
+case "$arch" in
+    x86_64) edition=Intel ;;
+    arm64) edition=Apple-Silicon ;;
+    *) printf 'Unsupported Mac architecture: %s\n' "$arch" >&2; exit 2 ;;
+esac
+archive="${1:-$PWD/dist/Orbit-Chinese-$edition.zip}"
 [[ "$archive" = /* ]] || archive="$PWD/$archive"
 work=$(mktemp -d "${TMPDIR%/}/orbit-chinese.XXXXXX")
 trap 'rm -rf "$work"' EXIT
@@ -12,7 +18,7 @@ if [[ -z "$built_app" ]]; then
     python3 tools/i18n.py
     xcodebuild -project Orbit.xcodeproj -scheme Orbit -configuration Debug \
         -destination 'generic/platform=macOS' -derivedDataPath "$work/build" \
-        ONLY_ACTIVE_ARCH=NO ARCHS=x86_64 ENABLE_DEBUG_DYLIB=NO CODE_SIGNING_ALLOWED=NO build
+        ONLY_ACTIVE_ARCH=NO ARCHS="$arch" ENABLE_DEBUG_DYLIB=NO CODE_SIGNING_ALLOWED=NO build
     built_app="$work/build/Build/Products/Debug/Orbit.app"
 fi
 
@@ -34,7 +40,8 @@ rm -rf "$contents/Library/LaunchDaemons" "$contents/PlugIns" "$contents/Helpers"
 codesign --force --sign - --timestamp=none "$contents/Frameworks/OrbitMediaRemote.dylib"
 codesign --force --sign - --timestamp=none --entitlements Orbit/Orbit.entitlements "$trial_app"
 codesign --verify --deep --strict "$trial_app"
-lipo -verify_arch x86_64 "$contents/MacOS/Orbit"
+lipo "$contents/MacOS/Orbit" -verify_arch "$arch"
+lipo "$contents/Frameworks/OrbitMediaRemote.dylib" -verify_arch "$arch"
 test -s "$contents/Resources/zh-Hans.lproj/Localizable.strings"
 test -s "$contents/Resources/zh-Hans.lproj/InfoPlist.strings"
 
