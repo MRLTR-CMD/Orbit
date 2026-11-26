@@ -222,7 +222,7 @@ private struct SnippetPickerView: View {
                     ForEach(Array(results.enumerated()), id: \.element.id) { i, s in
                         HStack(spacing: Space.compact) {
                             VStack(alignment: .leading, spacing: 1) {
-                                Text(s.name.isEmpty ? "Untitled".loc : s.name).font(.orbitBodyEmphasized).lineLimit(1)
+                                Text(s.name.isEmpty ? "Untitled".loc : SnippetStore.shared.displayName(for: s)).font(.orbitBodyEmphasized).lineLimit(1)
                                 Text(s.content.replacingOccurrences(of: "\n", with: " ")).font(.orbitCaption)
                                     .foregroundStyle(i == model.selection ? Palette.canvas.opacity(0.7) : Palette.inkSecondary).lineLimit(1)
                             }
@@ -298,13 +298,13 @@ extension SnippetStore {
         let q = query.trimmingCharacters(in: .whitespaces)
         guard q.count > 1 else { return [] }
         return snippets.compactMap { s -> (Snippet, Int)? in
-            let score = max(Fuzzy.score(q, s.name) ?? 0, Fuzzy.score(q, s.keyword) ?? 0)
+            let score = max(Fuzzy.score(q, s.name) ?? 0, Fuzzy.score(q, displayName(for: s)) ?? 0, Fuzzy.score(q, s.keyword) ?? 0)
             return score >= Fuzzy.substring - 100 ? (s, score) : nil
         }
         .sorted { $0.1 > $1.1 }
         .prefix(3)
         .map { s, _ in
-            LauncherItem(id: "snippet.\(s.id)", title: s.name.isEmpty ? s.keyword : s.name,
+            LauncherItem(id: "snippet.\(s.id)", title: s.name.isEmpty ? s.keyword : displayName(for: s),
                          subtitle: s.content.replacingOccurrences(of: "\n", with: " "),
                          icon: .symbol("text.badge.plus", Tint.clipboard), accessory: s.keyword.isEmpty ? nil : s.keyword,
                          section: "Snippets", actions: [

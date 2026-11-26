@@ -786,7 +786,7 @@ private struct KeyHintStrip: View {
         HStack(spacing: Space.standard) {
             ForEach(items, id: \.self) { item in
                 HStack(spacing: Space.tight + 2) {
-                    HStack(spacing: 3) { ForEach(item.keys, id: \.self) { ShortcutKeys(text: $0) } }
+                    HStack(spacing: 3) { ForEach(item.keys, id: \.self) { ShortcutKeys(text: $0.loc) } }
                     Text(item.title.loc)
                         .font(.orbitCaption)
                         .foregroundStyle(.white.opacity(0.82))

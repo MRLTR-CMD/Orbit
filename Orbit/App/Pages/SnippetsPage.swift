@@ -172,7 +172,7 @@ private struct SnippetList: View {
                         let on = page.selection == s.id
                         HStack(spacing: Space.compact) {
                             VStack(alignment: .leading, spacing: 1) {
-                                Text(s.name.isEmpty ? "Untitled".loc : s.name).font(.orbitBodyEmphasized).lineLimit(1)
+                                Text(s.name.isEmpty ? "Untitled".loc : store.displayName(for: s)).font(.orbitBodyEmphasized).lineLimit(1)
                                 Text(s.content.isEmpty ? " " : s.content.replacingOccurrences(of: "\n", with: " "))
                                     .font(.orbitCaption).lineLimit(1)
                                     .foregroundStyle(on ? Palette.canvas.opacity(0.7) : Palette.inkSecondary)
@@ -225,7 +225,7 @@ private struct SnippetEditor: View {
     var body: some View {
         VStack(alignment: .leading, spacing: Space.related) {
             HStack(spacing: Space.related) {
-                field("Name", text: $draft.name, prompt: "Address")
+                field("Name", text: displayName, prompt: "Address")
                 field("Keyword", text: $draft.keyword, prompt: ";addr", mono: true).frame(width: 150)
             }
             if let other = store.clash(for: draft) {
@@ -287,6 +287,12 @@ private struct SnippetEditor: View {
             loaded = true
         }
         .onChange(of: draft) { _, new in if loaded { store.update(new) } }
+    }
+
+    private var displayName: Binding<String> {
+        Binding(get: { store.displayName(for: draft) }, set: { name in
+            if name != store.displayName(for: draft) { draft.name = name }
+        })
     }
 
     private var preview: String {

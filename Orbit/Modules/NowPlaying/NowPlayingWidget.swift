@@ -28,7 +28,7 @@ struct WidgetContent {
     @MainActor static let sample: WidgetContent = {
         let art = sampleArtwork
         let start = Date()
-        return WidgetContent(title: "Night Drive", artist: "Orbit", album: "Afterglow", artwork: art,
+        return WidgetContent(title: "Night Drive".loc, artist: "Orbit", album: "Afterglow".loc, artwork: art,
                              palette: ArtworkPalette(art), playing: true, liked: true, duration: 214,
                              elapsed: { 62 + $0.timeIntervalSince(start).truncatingRemainder(dividingBy: 150) },
                              appIcon: nil, appName: "Music", generation: 0, live: false)

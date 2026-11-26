@@ -43,14 +43,29 @@ final class SnippetStore {
     }
 
     /// A few to show how it works; delete them freely.
+    private static let starterTemplates = [
+        Snippet(name: "Today’s date", keyword: ";date", content: "{date:yyyy-MM-dd}", folder: "Examples"),
+        Snippet(name: "Current time", keyword: ";time", content: "{time}", folder: "Examples"),
+        Snippet(name: "Email address", keyword: ";email", content: "you@example.com", folder: "Examples"),
+        Snippet(name: "Reply greeting", keyword: ";hi",
+                content: "Hi {input:Name},\n\n{cursor}\n\nThanks!", folder: "Examples"),
+    ]
+
     private static var starters: [Snippet] {
-        [
-            Snippet(name: "Today’s date".loc, keyword: ";date", content: "{date:yyyy-MM-dd}", folder: "Examples".loc),
-            Snippet(name: "Current time".loc, keyword: ";time", content: "{time}", folder: "Examples".loc),
-            Snippet(name: "Email address".loc, keyword: ";email", content: "you@example.com", folder: "Examples".loc),
-            Snippet(name: "Reply greeting".loc, keyword: ";hi",
-                    content: "Hi {input:Name},\n\n{cursor}\n\nThanks!".loc, folder: "Examples".loc),
-        ]
+        starterTemplates.map { template in
+            Snippet(name: template.name.loc, keyword: template.keyword, content: template.content.loc, folder: template.folder.loc)
+        }
+    }
+
+    /// Localize the display of an untouched sample saved before its translation was available.
+    /// Keep the stored name available for existing {snippet:…} references.
+    func displayName(for snippet: Snippet) -> String {
+        let isStarter = Self.starterTemplates.contains { template in
+            snippet.name == template.name && snippet.keyword == template.keyword
+                && snippet.content == template.content
+                && (snippet.folder == template.folder || snippet.folder == template.folder.loc)
+        }
+        return isStarter ? snippet.name.loc : snippet.name
     }
 
     var active: [Snippet] { snippets.filter { $0.enabled && !$0.keyword.isEmpty } }
@@ -102,7 +117,8 @@ final class SnippetStore {
         let q = query.trimmingCharacters(in: .whitespaces)
         guard !q.isEmpty else { return snippets.sorted { $0.used > $1.used } }
         return snippets.compactMap { s -> (Snippet, Int)? in
-            let score = [Fuzzy.score(q, s.name), Fuzzy.score(q, s.keyword), s.content.localizedCaseInsensitiveContains(q) ? 300 : nil]
+            let score = [Fuzzy.score(q, s.name), Fuzzy.score(q, displayName(for: s)), Fuzzy.score(q, s.keyword),
+                         s.content.localizedCaseInsensitiveContains(q) ? 300 : nil]
                 .compactMap { $0 }.max()
             return score.map { (s, $0) }
         }

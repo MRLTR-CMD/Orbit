@@ -169,7 +169,7 @@ struct CapturePage: View {
     }
 
     private func tip(_ key: String, _ text: String) -> some View {
-        SettingsRow(title: text) { ShortcutKeys(text: key) }
+        SettingsRow(title: text) { ShortcutKeys(text: key.loc) }
     }
 }
 

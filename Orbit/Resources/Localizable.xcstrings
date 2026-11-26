@@ -1154,7 +1154,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "将 %ld 项移入废纸篓，仍可恢复。"
+            "value": "将 %ld 项移入废纸篓，清空前可恢复。"
           }
         }
       }
@@ -1493,7 +1493,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "%ldd 前"
+            "value": "%ld 天前"
           }
         }
       }
@@ -1544,7 +1544,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "%ldh 前"
+            "value": "%ld 小时前"
           }
         }
       }
@@ -1578,7 +1578,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "%ldm 前"
+            "value": "%ld 分钟前"
           }
         }
       }
@@ -2899,7 +2899,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "你自己的格式的日期"
+            "value": "按自定义格式插入日期"
           }
         }
       }
@@ -2967,7 +2967,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "新鲜独特的ID"
+            "value": "生成一个新的唯一标识符"
           }
         }
       }
@@ -4783,7 +4783,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "允许辅助功能扩展关键字"
+            "value": "授予辅助功能权限以展开关键词"
           }
         }
       }
@@ -4936,7 +4936,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "允许 Orbit Helper 进入登录项和盖子模式开关一次，无需密码。"
+            "value": "在“登录项”中允许 Orbit 助手后，切换合盖模式无需再次输入密码。"
           }
         }
       }
@@ -5089,7 +5089,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在系统设置中允许访问。 Orbit 立即注意到 - 没有重新启动。"
+            "value": "在系统设置中授权即可立即生效。"
           }
         }
       }
@@ -5194,7 +5194,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "快到了"
+            "value": "即将完成设置"
           }
         }
       }
@@ -5307,7 +5307,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "始终位于顶部"
+            "value": "始终置顶"
           }
         }
       }
@@ -5527,7 +5527,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "动画歌曲变化"
+            "value": "切换歌曲时播放动画"
           }
         }
       }
@@ -5581,7 +5581,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "另一个片段，按关键字或名称"
+            "value": "通过关键词或名称插入另一段文本"
           }
         }
       }
@@ -5598,7 +5598,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "任何跑步者"
+            "value": "所有动画样式"
           }
         }
       }
@@ -6018,7 +6018,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "苹果拼写"
+            "value": "Apple 拼写检查"
           }
         }
       }
@@ -6069,7 +6069,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "苹果应用"
+            "value": "Apple 自带应用"
           }
         }
       }
@@ -6263,7 +6263,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "应用领域"
+            "value": "应用"
           }
         }
       }
@@ -6297,7 +6297,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "当舞台管理器显示最近的应用时适用。"
+            "value": "台前调度显示最近使用的应用时生效。"
           }
         }
       }
@@ -6595,7 +6595,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "当我打字时"
+            "value": "输入后立即展开"
           }
         }
       }
@@ -6739,7 +6739,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "当片段进入时询问它"
+            "value": "插入时提示输入"
           }
         }
       }
@@ -6773,7 +6773,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "询问何时开放。"
+            "value": "打开此应用时请求授权。"
           }
         }
       }
@@ -6836,7 +6836,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "声音的"
+            "value": "音频"
           }
         }
       }
@@ -7325,7 +7325,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "酒吧"
+            "value": "条形"
           }
         }
       }
@@ -7693,7 +7693,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "大胆的"
+            "value": "粗体"
           }
         }
       }
@@ -7736,7 +7736,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "两者都会在同一个角落开火。将它们移至 Orbit 并关闭 macOS。"
+            "value": "同一角落会触发两套操作。可迁移到 Orbit，并关闭 macOS 的触发角。"
           }
         }
       }
@@ -7881,7 +7881,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "明亮的"
+            "value": "明亮"
           }
         }
       }
@@ -10497,7 +10497,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "经典的"
+            "value": "经典"
           }
         }
       }
@@ -12532,7 +12532,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "凉爽的"
+            "value": "温度正常"
           }
         }
       }
@@ -14670,7 +14670,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "道姆"
+            "value": "Daum"
           }
         }
       }
@@ -15024,7 +15024,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "商榷"
+            "value": "较慢"
           }
         }
       }
@@ -15234,7 +15234,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "细节"
+            "value": "详情"
           }
         }
       }
@@ -15271,7 +15271,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "开发商"
+            "value": "开发工具"
           }
         }
       }
@@ -15782,7 +15782,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "显示于"
+            "value": "屏幕保持点亮"
           }
         }
       }
@@ -16041,7 +16041,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "点"
+            "value": "圆点"
           }
         }
       }
@@ -16479,7 +16479,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "拖动它可以在歌曲中跳跃。"
+            "value": "拖动进度条可跳到歌曲的其他位置。"
           }
         }
       }
@@ -16911,7 +16911,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "一切皆有情商"
+            "value": "全局均衡器"
           }
         }
       }
@@ -17076,7 +17076,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "社论"
+            "value": "杂志风格"
           }
         }
       }
@@ -17266,7 +17266,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "电子邮件"
+            "value": "电子邮件地址"
           }
         }
       }
@@ -17775,7 +17775,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "即使盖子关闭"
+            "value": "合盖时也保持唤醒"
           }
         }
       }
@@ -17999,7 +17999,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "一切"
+            "value": "全部"
           }
         }
       }
@@ -18370,7 +18370,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "出口"
+            "value": "已导出"
           }
         }
       }
@@ -18387,7 +18387,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "出口…"
+            "value": "正在导出…"
           }
         }
       }
@@ -18404,7 +18404,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "出口…"
+            "value": "导出…"
           }
         }
       }
@@ -18549,7 +18549,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "提炼…"
+            "value": "解压…"
           }
         }
       }
@@ -18711,7 +18711,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "使用人脸解锁锁定屏幕"
+            "value": "用人脸验证解锁 Mac"
           }
         }
       }
@@ -20605,7 +20605,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "从封面看"
+            "value": "取自封面"
           }
         }
       }
@@ -21438,7 +21438,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "重的"
+            "value": "特粗"
           }
         }
       }
@@ -21489,7 +21489,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "你好{input:Name}，\n\n{光标}\n\n谢谢！"
+            "value": "{input:姓名}，你好！\n\n{cursor}\n\n谢谢！"
           }
         }
       }
@@ -21917,7 +21917,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "高的"
+            "value": "高"
           }
         }
       }
@@ -22286,7 +22286,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "热的"
+            "value": "偏热"
           }
         }
       }
@@ -22824,7 +22824,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "进口 Orbit 出口"
+            "value": "导入 Orbit 导出文件"
           }
         }
       }
@@ -23400,7 +23400,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "立即的"
+            "value": "立即触发"
           }
         }
       }
@@ -23806,7 +23806,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "它已从这台 Mac 上的密码库中删除。此操作无法撤消。"
+            "value": "此记录将从本机密码库永久删除。"
           }
         }
       }
@@ -23889,7 +23889,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "现在"
+            "value": "刚刚"
           }
         }
       }
@@ -24346,7 +24346,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "盖上盖子后仍可继续工作，就像在外部显示器上一样。询问你的密码。"
+            "value": "合盖后 Mac 仍会继续运行。开启时需要输入密码。"
           }
         }
       }
@@ -24752,7 +24752,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "韩国人"
+            "value": "韩语"
           }
         }
       }
@@ -25555,7 +25555,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "等级%ld"
+            "value": "第 %ld 级"
           }
         }
       }
@@ -25809,7 +25809,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "喜欢按钮"
+            "value": "收藏按钮"
           }
         }
       }
@@ -26793,7 +26793,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "喜欢音乐中的歌曲。"
+            "value": "在“音乐”中收藏当前歌曲。"
           }
         }
       }
@@ -26810,7 +26810,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "低的"
+            "value": "低"
           }
         }
       }
@@ -26926,7 +26926,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "麦克醒了"
+            "value": "Mac 保持唤醒"
           }
         }
       }
@@ -26960,7 +26960,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "仅限苹果机"
+            "value": "仅让 Mac 保持唤醒"
           }
         }
       }
@@ -27369,7 +27369,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "实测%@"
+            "value": "测量时间：%@"
           }
         }
       }
@@ -27491,7 +27491,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "记忆"
+            "value": "内存"
           }
         }
       }
@@ -28128,7 +28128,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "单核细胞增多症"
+            "value": "等宽"
           }
         }
       }
@@ -28812,7 +28812,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "仅限音乐应用"
+            "value": "仅音乐应用"
           }
         }
       }
@@ -29113,7 +29113,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "纳维尔"
+            "value": "Naver"
           }
         }
       }
@@ -29683,7 +29683,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "夜间开车"
+            "value": "夜行"
           }
         }
       }
@@ -29722,7 +29722,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "没有意外的拖累。"
+            "value": "锁定后可防止误拖动。"
           }
         }
       }
@@ -29807,7 +29807,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "没有运行的开发服务器"
+            "value": "暂无运行中的开发服务器"
           }
         }
       }
@@ -30824,7 +30824,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "没有播放任何内容"
+            "value": "暂无播放内容"
           }
         }
       }
@@ -31028,7 +31028,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "那里没有什么可以进口的。"
+            "value": "没有可导入的记录。"
           }
         }
       }
@@ -31784,7 +31784,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "设备上"
+            "value": "本机处理"
           }
         }
       }
@@ -32175,7 +32175,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "开卡"
+            "value": "打开检查窗口"
           }
         }
       }
@@ -32237,7 +32237,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "开放历史"
+            "value": "打开剪贴板历史"
           }
         }
       }
@@ -32469,7 +32469,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "开放天气"
+            "value": "打开天气"
           }
         }
       }
@@ -33768,7 +33768,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Orbit 仅重新路由你更改的应用。其他一切都和以前一样。"
+            "value": "只会调整你修改过的应用的音频，其他应用照常播放。"
           }
         }
       }
@@ -34021,7 +34021,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Orbit 监视你的关键字并在其位置输入代码片段。"
+            "value": "Orbit 检测到关键词后，会将其替换为对应的文本片段。"
           }
         }
       }
@@ -35434,7 +35434,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "丸"
+            "value": "胶囊"
           }
         }
       }
@@ -36600,7 +36600,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "流程"
+            "value": "进程"
           }
         }
       }
@@ -36697,7 +36697,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "进步"
+            "value": "进度"
           }
         }
       }
@@ -36882,7 +36882,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "快的"
+            "value": "快速"
           }
         }
       }
@@ -36933,7 +36933,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "快速查找文件夹"
+            "value": "快速查看文件夹"
           }
         }
       }
@@ -36950,7 +36950,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "快速注释"
+            "value": "快速备忘录"
           }
         }
       }
@@ -38073,7 +38073,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "常规的"
+            "value": "常规"
           }
         }
       }
@@ -38124,7 +38124,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "轻松"
+            "value": "宽松"
           }
         }
       }
@@ -38606,7 +38606,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "回复问候语"
+            "value": "回复问候"
           }
         }
       }
@@ -39980,7 +39980,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "保存这个造型…"
+            "value": "保存此外观…"
           }
         }
       }
@@ -40405,7 +40405,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "节省…"
+            "value": "保存…"
           }
         }
       }
@@ -40597,7 +40597,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "屏幕开启"
+            "value": "屏幕保持点亮"
           }
         }
       }
@@ -40648,7 +40648,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "屏幕保持开启状态"
+            "value": "保持屏幕点亮"
           }
         }
       }
@@ -40665,7 +40665,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "屏幕也保持打开状态，并且 Mac 在盖子关闭的情况下也能继续工作。询问你的密码。"
+            "value": "屏幕保持点亮，合盖后 Mac 仍会继续运行。开启时需要输入密码。"
           }
         }
       }
@@ -41902,7 +41902,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "设置 Orbit 密码"
+            "value": "设置 Orbit 密码库"
           }
         }
       }
@@ -42630,7 +42630,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "显示所有 %ld 应用"
+            "value": "显示全部 %ld 个应用"
           }
         }
       }
@@ -43597,7 +43597,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "睡眠正常"
+            "value": "按系统设置休眠"
           }
         }
       }
@@ -43957,7 +43957,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "坚硬的"
+            "value": "纯色"
           }
         }
       }
@@ -44442,7 +44442,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "堆叠式"
+            "value": "堆叠"
           }
         }
       }
@@ -44459,7 +44459,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "剧务"
+            "value": "台前调度"
           }
         }
       }
@@ -44476,7 +44476,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "舞台管理器和窗口平铺。"
+            "value": "台前调度和窗口平铺。"
           }
         }
       }
@@ -45183,7 +45183,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "严格的"
+            "value": "严格"
           }
         }
       }
@@ -45234,7 +45234,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "风格"
+            "value": "样式"
           }
         }
       }
@@ -46204,7 +46204,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "文本仅发送至你选择的引擎，如果失败则发送至下一个引擎。 Apple Intelligence 和 Apple Spelling 永远不会离开这款 Mac。 Orbit 不会保留你检查的内容的副本。"
+            "value": "待检查的文字只会发给所选引擎，失败时才会尝试下一个。Apple Intelligence 和 Apple 拼写检查均在本机处理。Orbit 不会保存检查的内容。"
           }
         }
       }
@@ -47162,7 +47162,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "现在的时间"
+            "value": "当前时间"
           }
         }
       }
@@ -47358,7 +47358,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "没有文字可取出——可能是扫描件。"
+            "value": "未找到可提取的文字。此文件可能是扫描件。"
           }
         }
       }
@@ -49719,7 +49719,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "打开 Knock 来尝试一下"
+            "value": "开启轻敲后试用"
           }
         }
       }
@@ -52193,7 +52193,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "温暖的"
+            "value": "较暖"
           }
         }
       }
@@ -52916,7 +52916,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "插入符号结束的地方"
+            "value": "插入后光标所在的位置"
           }
         }
       }
@@ -53779,7 +53779,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "你可以从“废纸篓”中恢复它，直到将其清空为止。"
+            "value": "清空废纸篓前可以恢复。"
           }
         }
       }
@@ -54558,7 +54558,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "可用的"
+            "value": "可用"
           }
         }
       }
@@ -55872,7 +55872,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "macOS自己的热点角已开启"
+            "value": "macOS 的触发角已开启"
           }
         }
       }
